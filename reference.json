@@ -1,0 +1,31 @@
+{
+  "items": [
+    {
+      "id": "ref-001",
+      "name": "Country Codes",
+      "category": "Geography",
+      "description": "Standard ISO country codes and names",
+      "lastUpdated": "2024-03-20T10:00:00Z",
+      "version": "1.0.0",
+      "owner": "Data Governance Team"
+    },
+    {
+      "id": "ref-002",
+      "name": "Currency Codes",
+      "category": "Finance",
+      "description": "ISO 4217 currency codes and exchange rates",
+      "lastUpdated": "2024-03-19T15:30:00Z",
+      "version": "2.1.0",
+      "owner": "Finance Team"
+    },
+    {
+      "id": "ref-003",
+      "name": "Industry Classifications",
+      "category": "Business",
+      "description": "NAICS and SIC industry classification codes",
+      "lastUpdated": "2024-03-18T09:15:00Z",
+      "version": "1.5.0",
+      "owner": "Business Intelligence Team"
+    }
+  ]
+} 

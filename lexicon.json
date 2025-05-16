@@ -1,0 +1,136 @@
+{
+  "terms": [
+    {
+      "id": 1,
+      "term": "API",
+      "definition": "Application Programming Interface - A set of rules and protocols for building and interacting with software applications",
+      "domains": ["Technology", "Communications"]
+    },
+    {
+      "id": 2,
+      "term": "Microservices",
+      "definition": "An architectural style that structures an application as a collection of small, independent services",
+      "domains": ["Technology", "Infrastructure"]
+    },
+    {
+      "id": 3,
+      "term": "DevOps",
+      "definition": "A set of practices that combines software development and IT operations to shorten the development lifecycle",
+      "domains": ["Technology", "Process"]
+    },
+    {
+      "id": 4,
+      "term": "CI/CD",
+      "definition": "Continuous Integration/Continuous Deployment - A method to frequently deliver apps to customers by introducing automation",
+      "domains": ["Technology", "Process"]
+    },
+    {
+      "id": 5,
+      "term": "Containerization",
+      "definition": "A lightweight alternative to full machine virtualization that involves encapsulating an application in a container with its own operating environment",
+      "domains": ["Technology", "Infrastructure"]
+    },
+    {
+      "id": 6,
+      "term": "REST",
+      "definition": "Representational State Transfer - An architectural style for designing networked applications",
+      "domains": ["Technology", "Communications"]
+    },
+    {
+      "id": 7,
+      "term": "GraphQL",
+      "definition": "A query language for APIs and a runtime for executing those queries with existing data",
+      "domains": ["Technology", "Communications"]
+    },
+    {
+      "id": 8,
+      "term": "OAuth",
+      "definition": "An open standard for access delegation, commonly used for token-based authentication and authorization",
+      "domains": ["Safety", "Technology"]
+    },
+    {
+      "id": 9,
+      "term": "JWT",
+      "definition": "JSON Web Token - A compact, URL-safe means of representing claims between two parties",
+      "domains": ["Safety", "Technology"]
+    },
+    {
+      "id": 10,
+      "term": "WebSocket",
+      "definition": "A computer communications protocol providing full-duplex communication channels over a single TCP connection",
+      "domains": ["Technology", "Communications"]
+    }
+  ],
+  "suffixes": [
+    {
+      "id": "suf-001",
+      "name": "API",
+      "description": "Application Programming Interface",
+      "count": 15,
+      "examples": ["REST API", "GraphQL API", "Web API"]
+    },
+    {
+      "id": "suf-002",
+      "name": "DB",
+      "description": "Database",
+      "count": 12,
+      "examples": ["SQL DB", "NoSQL DB", "Graph DB"]
+    },
+    {
+      "id": "suf-003",
+      "name": "Service",
+      "description": "Service-oriented component",
+      "count": 20,
+      "examples": ["Auth Service", "Payment Service", "Notification Service"]
+    },
+    {
+      "id": "suf-004",
+      "name": "System",
+      "description": "Complete system or platform",
+      "count": 8,
+      "examples": ["Payment System", "Billing System", "Reporting System"]
+    },
+    {
+      "id": "suf-005",
+      "name": "Manager",
+      "description": "Management component",
+      "count": 10,
+      "examples": ["User Manager", "Resource Manager", "Task Manager"]
+    },
+    {
+      "id": "suf-006",
+      "name": "Engine",
+      "description": "Core processing component",
+      "count": 6,
+      "examples": ["Search Engine", "Rule Engine", "Recommendation Engine"]
+    },
+    {
+      "id": "suf-007",
+      "name": "Client",
+      "description": "Client-side component",
+      "count": 9,
+      "examples": ["Web Client", "Mobile Client", "Desktop Client"]
+    },
+    {
+      "id": "suf-008",
+      "name": "Server",
+      "description": "Server-side component",
+      "count": 11,
+      "examples": ["Web Server", "Application Server", "File Server"]
+    },
+    {
+      "id": "suf-009",
+      "name": "Gateway",
+      "description": "Entry point or routing component",
+      "count": 7,
+      "examples": ["API Gateway", "Payment Gateway", "Service Gateway"]
+    },
+    {
+      "id": "suf-010",
+      "name": "Repository",
+      "description": "Data storage component",
+      "count": 14,
+      "examples": ["User Repository", "Product Repository", "Order Repository"]
+    }
+  ]
+} 

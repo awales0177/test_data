@@ -1,0 +1,40 @@
+{
+  "light": {
+    "background": "#f8f9fa",
+    "card": "#ffffff",
+    "text": "#2c3e50",
+    "textSecondary": "#7f8c8d",
+    "primary": "#3498db",
+    "primaryHover": "#2980b9",
+    "border": "rgba(0, 0, 0, 0.08)",
+    "favorite": "#f1c40f",
+    "favoriteInactive": "#bdc3c7",
+    "success": "#2ecc71",
+    "warning": "#f1c40f",
+    "error": "#e74c3c",
+    "quality": {
+      "high": "#2ecc71",
+      "medium": "#f1c40f",
+      "low": "#e74c3c"
+    }
+  },
+  "dark": {
+    "background": "#1a1a1a",
+    "card": "#2d2d2d",
+    "text": "#ffffff",
+    "textSecondary": "#bdc3c7",
+    "primary": "#3498db",
+    "primaryHover": "#2980b9",
+    "border": "rgba(255, 255, 255, 0.08)",
+    "favorite": "#f1c40f",
+    "favoriteInactive": "#7f8c8d",
+    "success": "#27ae60",
+    "warning": "#f39c12",
+    "error": "#c0392b",
+    "quality": {
+      "high": "#27ae60",
+      "medium": "#f39c12",
+      "low": "#c0392b"
+    }
+  }
+} 

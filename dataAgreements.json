@@ -1,0 +1,415 @@
+{
+  "agreements": [
+    {
+      "id": "contract-001",
+      "name": "Product Data Schema",
+      "description": "Product agreement for product data",
+      "status": "active",
+      "specificationMaintainer": "Product Data Team",
+      "parentSystem": "Product Management System",
+      "dataProducer": "Product Service",
+      "dataValidator": "Product Data Team",
+      "dataConsumer": "Catalog Service",
+      "modelShortName": "PROD",
+      "contractVersion": "1.0.0",
+      "deliveredVersion": ["1.2.0","1.1.0","1.0.0"],
+      "deliveryFrequency": "real-time",
+      "startDate": "2024-02-01T09:15:00Z",
+      "endDate": null,
+      "fileFormat": "JSON",
+      "restricted": false,
+      "location": "us-east-1",
+      "todo": {
+        "date": "2024-03-25T10:00:00Z",
+        "items": [
+          "Implement new product category validation rules",
+          "Update documentation for SKU format changes",
+          "Schedule review with Product Data Team"
+        ]
+      },
+      "changelog": [
+        {
+          "version": "1.2.0",
+          "date": "2024-03-15T10:30:00Z",
+          "changes": ["Added new product category fields", "Updated validation rules for SKU format"]
+        },
+        {
+          "version": "1.1.0",
+          "date": "2024-02-28T14:20:00Z",
+          "changes": ["Added support for product variants", "Enhanced price validation"]
+        },
+        {
+          "version": "1.0.0",
+          "date": "2024-02-01T09:15:00Z",
+          "changes": ["Initial contract release"]
+        }
+      ],
+      "nextUpdate": "2024-04-15T10:30:00Z",
+      "lastUpdated": "2024-03-15T10:30:00Z"
+    },
+    {
+      "id": "contract-002",
+      "name": "Order Processing",
+      "description": "Product agreement for order processing",
+      "status": "in_progress",
+      "specificationMaintainer": "Order Management Team",
+      "parentSystem": "Order Management System",
+      "dataProducer": "Order Service",
+      "dataValidator": "Order Processing Team",
+      "dataConsumer": "Fulfillment Service",
+      "modelShortName": "ORD",
+      "contractVersion": "2.0.0",
+      "deliveredVersion": "2.0.1",
+      "deliveryFrequency": "real-time",
+      "startDate": "2024-02-15T08:45:00Z",
+      "endDate": "2024-12-31T23:59:59Z",
+      "fileFormat": "Avro",
+      "restricted": true,
+      "location": "eu-west-1",
+      "todo": {
+        "date": "2024-03-26T14:30:00Z",
+        "items": [
+          "Fix remaining order status transition issues",
+          "Add validation for international shipping addresses",
+          "Update test cases for new payment methods"
+        ]
+      },
+      "changelog": [
+        {
+          "version": "2.0.1",
+          "date": "2024-03-14T15:45:00Z",
+          "changes": ["Fixed order status transition bug", "Added validation for shipping address"]
+        },
+        {
+          "version": "2.0.0",
+          "date": "2024-03-01T11:30:00Z",
+          "changes": ["Major overhaul of order processing flow", "Added support for multiple payment methods"]
+        },
+        {
+          "version": "1.0.0",
+          "date": "2024-02-15T08:45:00Z",
+          "changes": ["Initial contract release"]
+        }
+      ],
+      "nextUpdate": "2024-04-14T15:45:00Z",
+      "lastUpdated": "2024-03-14T15:45:00Z"
+    },
+    {
+      "id": "contract-003",
+      "name": "Payment Processing",
+      "description": "Product agreement for payment data validation and security",
+      "status": "active",
+      "specificationMaintainer": "Payment Security Team",
+      "parentSystem": "Payment Processing System",
+      "dataProducer": "Payment Service",
+      "dataValidator": "Payment Security Team",
+      "dataConsumer": "Order Service",
+      "modelShortName": "FIN",
+      "contractVersion": "3.0.0",
+      "deliveredVersion": "3.1.0",
+      "deliveryFrequency": "real-time",
+      "startDate": "2024-02-01T10:30:00Z",
+      "endDate": null,
+      "fileFormat": "Protobuf",
+      "restricted": true,
+      "location": "us-west-2",
+      "todo": {
+        "date": "2024-03-27T09:00:00Z",
+        "items": [
+          "Integrate new payment provider API",
+          "Update fraud detection rules",
+          "Schedule security audit review"
+        ]
+      },
+      "changelog": [
+        {
+          "version": "3.1.0",
+          "date": "2024-03-13T09:15:00Z",
+          "changes": ["Added support for new payment providers", "Enhanced fraud detection rules"]
+        },
+        {
+          "version": "3.0.0",
+          "date": "2024-02-28T16:20:00Z",
+          "changes": ["Complete security audit implementation", "Updated encryption standards"]
+        },
+        {
+          "version": "2.0.0",
+          "date": "2024-02-01T10:30:00Z",
+          "changes": ["Major security enhancements", "Added new payment methods"]
+        }
+      ],
+      "nextUpdate": "2024-04-13T09:15:00Z",
+      "lastUpdated": "2024-03-13T09:15:00Z"
+    },
+    {
+      "id": "contract-004",
+      "name": "Inventory Sync",
+      "description": "Product agreement for real-time inventory synchronization",
+      "status": "in_review",
+      "specificationMaintainer": "Inventory Management Team",
+      "parentSystem": "Inventory Management System",
+      "dataProducer": "Inventory Service",
+      "dataValidator": "Inventory Management Team",
+      "dataConsumer": "Catalog Service",
+      "modelShortName": "PROD",
+      "contractVersion": "1.0.0",
+      "deliveredVersion": "1.0.0",
+      "deliveryFrequency": "5min",
+      "startDate": "2024-03-12T14:20:00Z",
+      "endDate": "2024-06-30T23:59:59Z",
+      "fileFormat": "JSON",
+      "restricted": false,
+      "location": "us-east-1",
+      "todo": {
+        "date": "2024-03-28T11:15:00Z",
+        "items": [
+          "Implement real-time sync monitoring",
+          "Add error handling for network issues",
+          "Create backup sync mechanism"
+        ]
+      },
+      "changelog": [
+        {
+          "version": "1.0.0",
+          "date": "2024-03-12T14:20:00Z",
+          "changes": ["Initial contract release", "Basic inventory sync implementation"]
+        }
+      ],
+      "nextUpdate": "2024-04-12T14:20:00Z",
+      "lastUpdated": "2024-03-12T14:20:00Z"
+    },
+    {
+      "id": "contract-005",
+      "name": "User Authentication",
+      "description": "Product agreement for user authentication and authorization",
+      "status": "active",
+      "specificationMaintainer": "Security Team",
+      "parentSystem": "Identity Management System",
+      "dataProducer": "Auth Service",
+      "dataValidator": "Security Team",
+      "dataConsumer": "User Service",
+      "modelShortName": "CUST",
+      "contractVersion": "2.0.0",
+      "deliveredVersion": "2.3.0",
+      "deliveryFrequency": "real-time",
+      "startDate": "2024-02-10T09:30:00Z",
+      "endDate": null,
+      "fileFormat": "Protobuf",
+      "restricted": true,
+      "location": "us-west-2",
+      "todo": {
+        "date": "2024-03-29T13:45:00Z",
+        "items": [
+          "Implement biometric authentication",
+          "Update session timeout policies",
+          "Add support for hardware security keys"
+        ]
+      },
+      "changelog": [
+        {
+          "version": "2.3.0",
+          "date": "2024-03-11T11:30:00Z",
+          "changes": ["Added MFA support", "Enhanced session management"]
+        },
+        {
+          "version": "2.2.0",
+          "date": "2024-02-25T13:45:00Z",
+          "changes": ["Added OAuth2 support", "Updated password policies"]
+        },
+        {
+          "version": "2.1.0",
+          "date": "2024-02-10T09:30:00Z",
+          "changes": ["Added social login support", "Enhanced security logging"]
+        }
+      ],
+      "nextUpdate": "2024-04-11T11:30:00Z",
+      "lastUpdated": "2024-03-11T11:30:00Z"
+    },
+    {
+      "id": "contract-006",
+      "name": "Shipping Integration",
+      "description": "Product agreement for shipping carrier integration",
+      "status": "in_progress",
+      "specificationMaintainer": "Shipping Operations Team",
+      "parentSystem": "Shipping Management System",
+      "dataProducer": "Shipping Service",
+      "dataValidator": "Shipping Operations Team",
+      "dataConsumer": "Fulfillment Service",
+      "modelShortName": "ORD",
+      "contractVersion": "1.5.0",
+      "deliveredVersion": "1.5.2",
+      "deliveryFrequency": "15min",
+      "startDate": "2024-02-15T10:15:00Z",
+      "endDate": "2024-09-30T23:59:59Z",
+      "fileFormat": "Avro",
+      "restricted": false,
+      "location": "eu-central-1",
+      "todo": {
+        "date": "2024-03-30T15:30:00Z",
+        "items": [
+          "Add new carrier API integration",
+          "Update rate calculation logic",
+          "Implement tracking webhook"
+        ]
+      },
+      "changelog": [
+        {
+          "version": "1.5.2",
+          "date": "2024-03-10T16:45:00Z",
+          "changes": ["Fixed rate calculation bug", "Added new carrier integration"]
+        },
+        {
+          "version": "1.5.0",
+          "date": "2024-02-28T14:30:00Z",
+          "changes": ["Added support for international shipping", "Enhanced tracking updates"]
+        },
+        {
+          "version": "1.0.0",
+          "date": "2024-02-15T10:15:00Z",
+          "changes": ["Initial contract release"]
+        }
+      ],
+      "nextUpdate": "2024-04-10T16:45:00Z",
+      "lastUpdated": "2024-03-10T16:45:00Z"
+    },
+    {
+      "id": "contract-009",
+      "name": "Order Analytics",
+      "description": "Product agreement for order data analytics and reporting",
+      "status": "active",
+      "producer": "Analytics Service",
+      "consumer": "Business Intelligence",
+      "modelShortName": "ORD",
+      "contractVersion": "1.0.0",
+      "deliveredVersion": "1.0.3",
+      "deliveryFrequency": "1hour",
+      "validator": "Data Analytics Team",
+      "startDate": "2024-03-01T09:00:00Z",
+      "endDate": null,
+      "fileFormat": "Parquet",
+      "restricted": true,
+      "location": "us-east-1",
+      "todo": {
+        "date": "2024-04-02T14:00:00Z",
+        "items": [
+          "Implement revenue analytics dashboard",
+          "Add customer segmentation features",
+          "Update reporting templates"
+        ]
+      },
+      "changelog": [
+        {
+          "version": "1.0.3",
+          "date": "2024-03-20T11:30:00Z",
+          "changes": ["Added revenue analytics", "Enhanced reporting capabilities"]
+        },
+        {
+          "version": "1.0.2",
+          "date": "2024-03-15T14:20:00Z",
+          "changes": ["Added customer segmentation", "Improved data aggregation"]
+        },
+        {
+          "version": "1.0.0",
+          "date": "2024-03-01T09:00:00Z",
+          "changes": ["Initial contract release", "Basic order analytics implementation"]
+        }
+      ],
+      "nextUpdate": "2024-04-20T11:30:00Z",
+      "lastUpdated": "2024-03-20T11:30:00Z"
+    },
+    {
+      "id": "contract-007",
+      "name": "Content Management",
+      "description": "Product agreement for content validation and publishing",
+      "status": "active",
+      "specificationMaintainer": "Content Management Team",
+      "parentSystem": "Content Management System",
+      "dataProducer": "CMS Service",
+      "dataValidator": "Content Management Team",
+      "dataConsumer": "Frontend Service",
+      "modelShortName": "TECH",
+      "contractVersion": "2.0.0",
+      "deliveredVersion": "2.1.0",
+      "deliveryFrequency": "1hour",
+      "startDate": "2024-02-01T09:30:00Z",
+      "endDate": null,
+      "fileFormat": "JSON",
+      "restricted": false,
+      "location": "us-east-1",
+      "todo": {
+        "date": "2024-03-31T10:00:00Z",
+        "items": [
+          "Implement rich text editor features",
+          "Add media optimization pipeline",
+          "Update content validation rules"
+        ]
+      },
+      "changelog": [
+        {
+          "version": "2.1.0",
+          "date": "2024-03-09T13:15:00Z",
+          "changes": ["Added rich text editor support", "Enhanced media handling"]
+        },
+        {
+          "version": "2.0.0",
+          "date": "2024-02-20T11:45:00Z",
+          "changes": ["Major content model update", "Added version control"]
+        },
+        {
+          "version": "1.0.0",
+          "date": "2024-02-01T09:30:00Z",
+          "changes": ["Initial contract release"]
+        }
+      ],
+      "nextUpdate": "2024-04-09T13:15:00Z",
+      "lastUpdated": "2024-03-09T13:15:00Z"
+    },
+    {
+      "id": "contract-008",
+      "name": "API Gateway",
+      "description": "Product agreement for API request/response validation",
+      "status": "in_review",
+      "specificationMaintainer": "API Platform Team",
+      "parentSystem": "API Management System",
+      "dataProducer": "API Gateway",
+      "dataValidator": "API Platform Team",
+      "dataConsumer": "Client Services",
+      "modelShortName": "TECH",
+      "contractVersion": "1.0.0",
+      "deliveredVersion": "1.0.3",
+      "deliveryFrequency": "real-time",
+      "startDate": "2024-02-10T08:45:00Z",
+      "endDate": "2024-08-31T23:59:59Z",
+      "fileFormat": "Protobuf",
+      "restricted": true,
+      "location": "us-west-2",
+      "todo": {
+        "date": "2024-04-01T09:15:00Z",
+        "items": [
+          "Implement rate limiting improvements",
+          "Add request validation middleware",
+          "Update API documentation"
+        ]
+      },
+      "changelog": [
+        {
+          "version": "1.0.3",
+          "date": "2024-03-08T10:30:00Z",
+          "changes": ["Fixed rate limiting bug", "Enhanced error handling"]
+        },
+        {
+          "version": "1.0.2",
+          "date": "2024-02-25T15:20:00Z",
+          "changes": ["Added request validation", "Updated security headers"]
+        },
+        {
+          "version": "1.0.0",
+          "date": "2024-02-10T08:45:00Z",
+          "changes": ["Initial contract release"]
+        }
+      ],
+      "nextUpdate": "2024-04-08T10:30:00Z",
+      "lastUpdated": "2024-03-08T10:30:00Z"
+    }
+  ]
+} 

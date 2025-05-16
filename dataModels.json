@@ -1,0 +1,549 @@
+{
+  "models": [
+    {
+      "id": 1,
+      "shortName": "CUST",
+      "name": "Customer Data Model",
+      "version": "2.1.0",
+      "description": "Comprehensive model for managing customer information including personal details, contact information, purchase history, preferences, and interaction records. Supports customer segmentation, relationship management, and personalized service delivery across multiple channels.",
+      "extendedDescription": "The Customer Data Model serves as the foundation for all customer-related operations. It includes detailed schemas for personal information, contact details, purchase history, preferences, and interaction records. The model supports advanced features like customer segmentation, relationship management, and personalized service delivery. It integrates with multiple channels including web, mobile, and in-store systems. The model also includes data quality checks, validation rules, and compliance measures for handling sensitive customer information.",
+      "lastUpdated": "2024-03-20",
+      "owner": "Data Team",
+      "specMaintainer": "Jane Smith",
+      "maintainerEmail": "",
+      "domain": ["Customer", "Data", "Analytics"],
+      "meta": {
+        "tier": "gold",
+        "verified": true
+      },
+      "changelog": [
+        {
+          "version": "2.1.0",
+          "date": "2024-03-20",
+          "changes": [
+            "Added new customer segmentation fields",
+            "Enhanced privacy compliance features",
+            "Updated validation rules for contact information"
+          ]
+        },
+        {
+          "version": "2.0.0",
+          "date": "2024-02-15",
+          "changes": [
+            "Major restructuring of customer profile schema",
+            "Added support for multi-channel interactions",
+            "Implemented new data quality metrics"
+          ]
+        },
+        {
+          "version": "1.5.0",
+          "date": "2024-01-10",
+          "changes": [
+            "Added purchase history tracking",
+            "Enhanced customer preference management",
+            "Updated documentation"
+          ]
+        }
+      ],
+      "resources": {
+        "code": "",
+        "documentation": "https://docs.example.com/customer-data-model",
+        "tools": "",
+        "git": "https://git.example.com/customer-data-model",
+        "validation": ""
+      },
+      "users": [
+        "Auth Service",
+        "User Service"
+      ]
+    },
+    {
+      "id": 2,
+      "shortName": "PROD",
+      "name": "Product Catalog",
+      "version": "1.3.0",
+      "description": "Product information and inventory management",
+      "extendedDescription": "The Product Catalog model manages comprehensive product information including SKUs, descriptions, pricing, categories, and inventory levels. It supports multiple product types, variants, and relationships between products. The model includes features for product categorization, attribute management, and inventory tracking. It also handles product lifecycle management, from creation to retirement, and supports bulk operations for product updates and maintenance.",
+      "lastUpdated": "2024-03-19",
+      "owner": "Product Team",
+      "specMaintainer": "Michael Chen",
+      "maintainerEmail": "michael.chen@example.com",
+      "domain": ["Product", "Inventory", "E-commerce"],
+      "meta": {
+        "tier": "silver",
+        "verified": true
+      },
+      "changelog": [
+        {
+          "version": "1.3.0",
+          "date": "2024-03-19",
+          "changes": [
+            "Added support for product variants",
+            "Enhanced inventory tracking capabilities",
+            "Updated pricing schema"
+          ]
+        },
+        {
+          "version": "1.2.0",
+          "date": "2024-02-28",
+          "changes": [
+            "Implemented bulk update operations",
+            "Added new product categories",
+            "Enhanced documentation"
+          ]
+        },
+        {
+          "version": "1.1.0",
+          "date": "2024-01-15",
+          "changes": [
+            "Added SKU management",
+            "Implemented basic inventory tracking",
+            "Initial release of product attributes"
+          ]
+        }
+      ],
+      "resources": {
+        "code": "https://github.com/org/product-catalog",
+        "documentation": "https://docs.example.com/product-catalog",
+        "tools": "https://tools.example.com/product-catalog",
+        "git": "https://git.example.com/product-catalog",
+        "validation": "https://validation.example.com/product-catalog"
+      },
+      "users": [
+        "Product Service",
+        "Catalog Service",
+        "Inventory Service"
+      ]
+    },
+    {
+      "id": 3,
+      "shortName": "ORD",
+      "name": "Order Management",
+      "version": "3.0.0",
+      "description": "End-to-end order processing and fulfillment data model covering order creation, payment processing, inventory allocation, shipping logistics, delivery tracking, and post-delivery support. Includes integration points with payment gateways, shipping carriers, and customer service systems.",
+      "extendedDescription": "The Order Management model provides a comprehensive framework for handling the entire order lifecycle. It includes detailed schemas for order creation, payment processing, inventory allocation, shipping logistics, and delivery tracking. The model supports multiple payment methods, shipping carriers, and fulfillment options. It includes features for order status tracking, exception handling, and post-delivery support. The model also integrates with customer service systems for handling inquiries and issues.",
+      "lastUpdated": "2024-03-18",
+      "owner": "Operations Team",
+      "specMaintainer": "Sarah Johnson",
+      "maintainerEmail": "sarah.johnson@example.com",
+      "domain": ["Orders", "Logistics", "Finance", "Customer"],
+      "meta": {
+        "tier": "bronze",
+        "verified": false
+      },
+      "changelog": [
+        {
+          "version": "3.0.0",
+          "date": "2024-03-18",
+          "changes": [
+            "Complete overhaul of order processing workflow",
+            "Added support for multiple payment gateways",
+            "Enhanced shipping carrier integration"
+          ]
+        },
+        {
+          "version": "2.2.0",
+          "date": "2024-02-20",
+          "changes": [
+            "Added real-time order tracking",
+            "Implemented new payment methods",
+            "Enhanced error handling"
+          ]
+        },
+        {
+          "version": "2.1.0",
+          "date": "2024-01-05",
+          "changes": [
+            "Added post-delivery support features",
+            "Enhanced order status tracking",
+            "Updated documentation"
+          ]
+        }
+      ],
+      "resources": {
+        "code": "https://github.com/org/order-management",
+        "documentation": "https://docs.example.com/order-management",
+        "tools": "https://tools.example.com/order-management",
+        "git": "https://git.example.com/order-management",
+        "validation": "https://validation.example.com/order-management"
+      },
+      "users": [
+        "Order Service",
+        "Fulfillment Service",
+        "Shipping Service",
+        "Analytics Service",
+        "Business Intelligence"
+      ]
+    },
+    {
+      "id": 4,
+      "shortName": "LEG",
+      "name": "Legacy Customer Data",
+      "version": "1.0.0",
+      "description": "Historical customer data from legacy systems",
+      "extendedDescription": "The Legacy Customer Data model maintains historical customer information from older systems. It includes data migration schemas, transformation rules, and archival procedures. The model supports data validation, cleaning, and enrichment processes. It also includes features for data retention policies, access controls, and compliance requirements. The model serves as a bridge between legacy systems and modern customer data platforms.",
+      "lastUpdated": "2024-03-15",
+      "owner": "Data Team",
+      "specMaintainer": "David Wilson",
+      "maintainerEmail": "david.wilson@example.com",
+      "domain": ["Customer", "Data", "Legacy"],
+      "meta": {
+        "tier": "bronze",
+        "verified": false
+      },
+      "resources": {
+        "code": "https://github.com/org/legacy-customer-data",
+        "documentation": "https://docs.example.com/legacy-customer-data",
+        "tools": "https://tools.example.com/legacy-customer-data",
+        "git": "https://git.example.com/legacy-customer-data",
+        "validation": "https://validation.example.com/legacy-customer-data"
+      }
+    },
+    {
+      "id": 5,
+      "shortName": "MKT",
+      "name": "Marketing Campaign Data",
+      "version": "2.2.0",
+      "description": "Comprehensive campaign performance and analytics data model tracking campaign metrics, customer engagement, conversion rates, ROI calculations, channel effectiveness, and A/B testing results. Supports multi-channel marketing attribution and campaign optimization.",
+      "extendedDescription": "The Marketing Campaign Data model provides a detailed framework for tracking and analyzing marketing campaign performance. It includes schemas for campaign metrics, customer engagement, conversion rates, and ROI calculations. The model supports multi-channel marketing attribution, A/B testing, and campaign optimization. It includes features for audience segmentation, targeting rules, and personalization strategies. The model also integrates with analytics platforms for advanced reporting and insights.",
+      "lastUpdated": "2024-03-17",
+      "owner": "Marketing Team",
+      "specMaintainer": "Emily Rodriguez",
+      "maintainerEmail": "emily.rodriguez@example.com",
+      "domain": ["Marketing", "Analytics", "Customer"],
+      "meta": {
+        "tier": "gold",
+        "verified": true
+      },
+      "resources": {
+        "code": "https://github.com/org/marketing-campaign-data",
+        "documentation": "https://docs.example.com/marketing-campaign-data",
+        "tools": "https://tools.example.com/marketing-campaign-data",
+        "git": "https://git.example.com/marketing-campaign-data",
+        "validation": "https://validation.example.com/marketing-campaign-data"
+      }
+    },
+    {
+      "id": 6,
+      "shortName": "SUP",
+      "name": "Supplier Information",
+      "version": "1.4.0",
+      "description": "Vendor and supplier management data",
+      "extendedDescription": "The Supplier Information model manages comprehensive vendor and supplier data. It includes schemas for supplier profiles, performance metrics, contract terms, and compliance requirements. The model supports supplier categorization, risk assessment, and relationship management. It includes features for supplier onboarding, evaluation, and maintenance. The model also handles supplier communication, document management, and audit trails.",
+      "lastUpdated": "2024-03-16",
+      "owner": "Procurement Team",
+      "specMaintainer": "Robert Kim",
+      "maintainerEmail": "robert.kim@example.com",
+      "domain": ["Supplier", "Procurement", "Finance"],
+      "meta": {
+        "tier": "silver",
+        "verified": false
+      },
+      "resources": {
+        "code": "https://github.com/org/supplier-information",
+        "documentation": "https://docs.example.com/supplier-information",
+        "tools": "",
+        "git": "https://git.example.com/supplier-information",
+        "validation": "https://validation.example.com/supplier-information"
+      }
+    },
+    {
+      "id": 7,
+      "shortName": "HCF",
+      "name": "Healthcare Facility Management",
+      "version": "3.1.0",
+      "description": "Comprehensive healthcare facility operations and resource management model covering patient flow, staff scheduling, equipment inventory, maintenance schedules, supply chain management, and regulatory compliance tracking. Includes integration with electronic health records and billing systems.",
+      "extendedDescription": "The Healthcare Facility Management model provides a comprehensive framework for managing healthcare facility operations. It includes detailed schemas for patient flow, staff scheduling, equipment inventory, and maintenance schedules. The model supports supply chain management, regulatory compliance tracking, and resource allocation. It includes features for integration with electronic health records and billing systems. The model also handles emergency response protocols, quality assurance, and performance monitoring.",
+      "lastUpdated": "2024-03-14",
+      "owner": "Healthcare Team",
+      "specMaintainer": "Dr. Lisa Patel",
+      "maintainerEmail": "lisa.patel@example.com",
+      "domain": ["Healthcare", "Facilities", "Operations"],
+      "meta": {
+        "tier": "gold",
+        "verified": true
+      },
+      "resources": {
+        "code": "https://github.com/org/healthcare-facility-management",
+        "documentation": "https://docs.example.com/healthcare-facility-management",
+        "tools": "https://tools.example.com/healthcare-facility-management",
+        "git": "https://git.example.com/healthcare-facility-management",
+        "validation": "https://validation.example.com/healthcare-facility-management"
+      }
+    },
+    {
+      "id": 8,
+      "shortName": "FIN",
+      "name": "Financial Transaction Model",
+      "version": "2.3.0",
+      "description": "Financial transaction processing and reconciliation",
+      "extendedDescription": "The Financial Transaction Model provides a robust framework for processing and reconciling financial transactions. It includes detailed schemas for transaction types, payment methods, and reconciliation rules. The model supports multi-currency transactions, tax calculations, and compliance requirements. It includes features for fraud detection, risk assessment, and audit trails. The model also handles transaction reporting, analytics, and regulatory reporting.",
+      "lastUpdated": "2024-03-13",
+      "owner": "Finance Team",
+      "specMaintainer": "James Thompson",
+      "maintainerEmail": "james.thompson@example.com",
+      "domain": ["Finance", "Compliance", "Analytics"],
+      "meta": {
+        "tier": "gold",
+        "verified": true
+      },
+      "resources": {
+        "code": "https://github.com/org/financial-transaction-model",
+        "documentation": "https://docs.example.com/financial-transaction-model",
+        "tools": "https://tools.example.com/financial-transaction-model",
+        "git": "https://git.example.com/financial-transaction-model",
+        "validation": "https://validation.example.com/financial-transaction-model"
+      },
+      "users": [
+        "Payment Service",
+        "Order Service"
+      ]
+    },
+    {
+      "id": 9,
+      "shortName": "TRANS",
+      "name": "Transportation Network",
+      "version": "1.5.0",
+      "description": "Transportation infrastructure and route management",
+      "extendedDescription": "The Transportation Network model manages comprehensive transportation infrastructure and route data. It includes schemas for network topology, route planning, and traffic management. The model supports real-time tracking, scheduling, and optimization. It includes features for maintenance planning, incident management, and performance monitoring. The model also handles integration with GPS systems, traffic sensors, and weather services.",
+      "lastUpdated": "2024-03-12",
+      "owner": "Transportation Team",
+      "specMaintainer": "Maria Garcia",
+      "maintainerEmail": "maria.garcia@example.com",
+      "domain": ["Transportation", "Infrastructure", "Operations"],
+      "meta": {
+        "tier": "silver",
+        "verified": true
+      },
+      "resources": {
+        "code": "https://github.com/org/transportation-network",
+        "documentation": "https://docs.example.com/transportation-network",
+        "tools": "https://tools.example.com/transportation-network",
+        "git": "https://git.example.com/transportation-network",
+        "validation": "https://validation.example.com/transportation-network"
+      }
+    },
+    {
+      "id": 10,
+      "shortName": "UTIL",
+      "name": "Utility Consumption",
+      "version": "2.0.0",
+      "description": "Comprehensive utility usage tracking and billing data model covering consumption patterns, billing cycles, payment processing, service interruptions, maintenance schedules, and customer usage analytics. Supports smart meter integration and real-time monitoring.",
+      "extendedDescription": "The Utility Consumption model provides a detailed framework for tracking and analyzing utility usage. It includes schemas for consumption patterns, billing cycles, and payment processing. The model supports smart meter integration, real-time monitoring, and predictive analytics. It includes features for service interruption management, maintenance scheduling, and customer usage analytics. The model also handles regulatory compliance, reporting requirements, and customer communication.",
+      "lastUpdated": "2024-03-11",
+      "owner": "Utilities Team",
+      "specMaintainer": "Thomas Lee",
+      "maintainerEmail": "thomas.lee@example.com",
+      "domain": ["Utilities", "Analytics", "Customer"],
+      "meta": {
+        "tier": "silver",
+        "verified": false
+      },
+      "resources": {
+        "code": "https://github.com/org/utility-consumption",
+        "documentation": "https://docs.example.com/utility-consumption",
+        "tools": "https://tools.example.com/utility-consumption",
+        "git": "https://git.example.com/utility-consumption",
+        "validation": "https://validation.example.com/utility-consumption"
+      }
+    },
+    {
+      "id": 11,
+      "shortName": "HOUS",
+      "name": "Housing Development",
+      "version": "1.2.0",
+      "description": "Housing project management and development tracking",
+      "extendedDescription": "The Housing Development model manages comprehensive housing project and development data. It includes schemas for project planning, resource allocation, and progress tracking. The model supports budget management, timeline scheduling, and risk assessment. It includes features for stakeholder management, regulatory compliance, and quality control. The model also handles integration with construction management systems and property management platforms.",
+      "lastUpdated": "2024-03-10",
+      "owner": "Housing Team",
+      "specMaintainer": "Daniel Martinez",
+      "maintainerEmail": "daniel.martinez@example.com",
+      "domain": ["Housing", "Development", "Construction"],
+      "meta": {
+        "tier": "bronze",
+        "verified": false
+      },
+      "resources": {
+        "code": "https://github.com/org/housing-development",
+        "documentation": "https://docs.example.com/housing-development",
+        "tools": "https://tools.example.com/housing-development",
+        "git": "https://git.example.com/housing-development",
+        "validation": "https://validation.example.com/housing-development"
+      }
+    },
+    {
+      "id": 12,
+      "shortName": "SOC",
+      "name": "Social Services Programs",
+      "version": "2.1.0",
+      "description": "Comprehensive social welfare program management and tracking model covering program eligibility, service delivery, case management, outcome tracking, and resource allocation. Includes integration with government benefits systems and community service providers.",
+      "extendedDescription": "The Social Services Programs model provides a comprehensive framework for managing social welfare programs. It includes detailed schemas for program eligibility, service delivery, and case management. The model supports outcome tracking, resource allocation, and performance monitoring. It includes features for integration with government benefits systems and community service providers. The model also handles client management, service coordination, and reporting requirements.",
+      "lastUpdated": "2024-03-09",
+      "owner": "Social Services Team",
+      "specMaintainer": "Rachel Anderson",
+      "maintainerEmail": "rachel.anderson@example.com",
+      "domain": ["Social", "Healthcare", "Government"],
+      "meta": {
+        "tier": "silver",
+        "verified": true
+      },
+      "resources": {
+        "code": "https://github.com/org/social-services-programs",
+        "documentation": "https://docs.example.com/social-services-programs",
+        "tools": "https://tools.example.com/social-services-programs",
+        "git": "https://git.example.com/social-services-programs",
+        "validation": "https://validation.example.com/social-services-programs"
+      }
+    },
+    {
+      "id": 13,
+      "shortName": "REC",
+      "name": "Recreation Facilities",
+      "version": "1.3.0",
+      "description": "Recreational facility management and scheduling",
+      "extendedDescription": "The Recreation Facilities model manages comprehensive recreational facility data. It includes schemas for facility information, scheduling, and maintenance. The model supports program management, resource allocation, and capacity planning. It includes features for online booking, membership management, and activity tracking. The model also handles integration with payment systems, communication platforms, and reporting tools.",
+      "lastUpdated": "2024-03-08",
+      "owner": "Recreation Team",
+      "specMaintainer": "Kevin Park",
+      "maintainerEmail": "kevin.park@example.com",
+      "domain": ["Recreation", "Facilities", "Operations"],
+      "meta": {
+        "tier": "bronze",
+        "verified": false
+      },
+      "resources": {
+        "code": "https://github.com/org/recreation-facilities",
+        "documentation": "https://docs.example.com/recreation-facilities",
+        "tools": "https://tools.example.com/recreation-facilities",
+        "git": "https://git.example.com/recreation-facilities",
+        "validation": "https://validation.example.com/recreation-facilities"
+      }
+    },
+    {
+      "id": 14,
+      "shortName": "CULT",
+      "name": "Cultural Programs",
+      "version": "1.4.0",
+      "description": "Cultural event and program management",
+      "extendedDescription": "The Cultural Programs model provides a framework for managing cultural events and programs. It includes schemas for event planning, scheduling, and resource management. The model supports program development, audience engagement, and impact assessment. It includes features for ticketing, marketing, and volunteer management. The model also handles integration with social media platforms, content management systems, and analytics tools.",
+      "lastUpdated": "2024-03-07",
+      "owner": "Cultural Affairs Team",
+      "specMaintainer": "Sophia Chen",
+      "maintainerEmail": "sophia.chen@example.com",
+      "domain": ["Cultural", "Events", "Marketing"],
+      "meta": {
+        "tier": "silver",
+        "verified": true
+      },
+      "resources": {
+        "code": "https://github.com/org/cultural-programs",
+        "documentation": "https://docs.example.com/cultural-programs",
+        "tools": "https://tools.example.com/cultural-programs",
+        "git": "https://git.example.com/cultural-programs",
+        "validation": "https://validation.example.com/cultural-programs"
+      }
+    },
+    {
+      "id": 15,
+      "shortName": "TECH",
+      "name": "Technology Infrastructure",
+      "version": "3.2.0",
+      "description": "Comprehensive IT infrastructure and service management model covering hardware inventory, software licensing, network topology, security protocols, system performance metrics, and incident management. Includes integration with monitoring tools and service desk systems.",
+      "extendedDescription": "The Technology Infrastructure model provides a comprehensive framework for managing IT infrastructure and services. It includes detailed schemas for hardware inventory, software licensing, and network topology. The model supports security protocols, system performance metrics, and incident management. It includes features for integration with monitoring tools and service desk systems. The model also handles capacity planning, disaster recovery, and compliance requirements.",
+      "lastUpdated": "2024-03-06",
+      "owner": "Technology Team",
+      "specMaintainer": "Alex Wong",
+      "maintainerEmail": "alex.wong@example.com",
+      "domain": ["Technology", "Infrastructure", "Security"],
+      "meta": {
+        "tier": "gold",
+        "verified": true
+      },
+      "resources": {
+        "code": "https://github.com/org/technology-infrastructure",
+        "documentation": "https://docs.example.com/technology-infrastructure",
+        "tools": "https://tools.example.com/technology-infrastructure",
+        "git": "https://git.example.com/technology-infrastructure",
+        "validation": "https://validation.example.com/technology-infrastructure"
+      },
+      "users": [
+        "CMS Service",
+        "Frontend Service",
+        "API Gateway",
+        "Client Services"
+      ]
+    },
+    {
+      "id": 16,
+      "shortName": "AGRI",
+      "name": "Agricultural Programs",
+      "version": "1.1.0",
+      "description": "Agricultural program management and tracking",
+      "extendedDescription": "The Agricultural Programs model manages comprehensive agricultural program data. It includes schemas for program planning, resource allocation, and progress tracking. The model supports crop management, livestock tracking, and equipment maintenance. It includes features for weather monitoring, soil analysis, and pest control. The model also handles integration with market systems, supply chain platforms, and regulatory compliance tools.",
+      "lastUpdated": "2024-03-05",
+      "owner": "Agriculture Team",
+      "specMaintainer": "Emma Davis",
+      "maintainerEmail": "emma.davis@example.com",
+      "domain": ["Agriculture", "Operations", "Analytics"],
+      "meta": {
+        "tier": "bronze",
+        "verified": false
+      },
+      "resources": {
+        "code": "https://github.com/org/agricultural-programs",
+        "documentation": "https://docs.example.com/agricultural-programs",
+        "tools": "https://tools.example.com/agricultural-programs",
+        "git": "https://git.example.com/agricultural-programs",
+        "validation": "https://validation.example.com/agricultural-programs"
+      }
+    },
+    {
+      "id": 17,
+      "shortName": "TOUR",
+      "name": "Tourism Services",
+      "version": "2.0.0",
+      "description": "Comprehensive tourism service management and visitor tracking model covering attraction management, visitor analytics, event scheduling, accommodation booking, transportation coordination, and tourism promotion. Includes integration with booking systems and visitor feedback platforms.",
+      "extendedDescription": "The Tourism Services model provides a comprehensive framework for managing tourism services. It includes detailed schemas for attraction management, visitor analytics, and event scheduling. The model supports accommodation booking, transportation coordination, and tourism promotion. It includes features for integration with booking systems and visitor feedback platforms. The model also handles seasonal planning, capacity management, and marketing campaigns.",
+      "lastUpdated": "2024-03-04",
+      "owner": "Tourism Team",
+      "specMaintainer": "Olivia Taylor",
+      "maintainerEmail": "olivia.taylor@example.com",
+      "domain": ["Tourism", "Marketing", "Analytics"],
+      "meta": {
+        "tier": "silver",
+        "verified": true
+      },
+      "resources": {
+        "code": "https://github.com/org/tourism-services",
+        "documentation": "https://docs.example.com/tourism-services",
+        "tools": "",
+        "git": "https://git.example.com/tourism-services",
+        "validation": "https://validation.example.com/tourism-services"
+      }
+    },
+    {
+      "id": 18,
+      "shortName": "INF",
+      "name": "Infrastructure Management",
+      "version": "2.4.0",
+      "description": "Public infrastructure maintenance and management",
+      "extendedDescription": "The Infrastructure Management model provides a comprehensive framework for managing public infrastructure. It includes detailed schemas for asset inventory, maintenance schedules, and condition assessment. The model supports work order management, resource allocation, and performance monitoring. It includes features for risk assessment, compliance tracking, and emergency response. The model also handles integration with GIS systems, maintenance management platforms, and reporting tools.",
+      "lastUpdated": "2024-03-03",
+      "owner": "Infrastructure Team",
+      "specMaintainer": "William Brown",
+      "maintainerEmail": "william.brown@example.com",
+      "domain": ["Infrastructure", "Operations", "Maintenance"],
+      "meta": {
+        "tier": "gold",
+        "verified": true
+      },
+      "resources": {
+        "code": "https://github.com/org/infrastructure-management",
+        "documentation": "https://docs.example.com/infrastructure-management",
+        "tools": "https://tools.example.com/infrastructure-management",
+        "git": "https://git.example.com/infrastructure-management",
+        "validation": "https://validation.example.com/infrastructure-management"
+      }
+    }
+  ]
+} 

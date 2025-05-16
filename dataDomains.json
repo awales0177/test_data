@@ -1,0 +1,580 @@
+{
+  "domains": [
+    {
+      "id": "customer",
+      "name": "Customer",
+      "description": "Customer-related data and processes",
+      "owner": "Customer Data Team",
+      "lastUpdated": "2024-03-15",
+      "subdomains": [
+        {
+          "id": "customer-profile",
+          "name": "Customer Profile",
+          "description": "Core customer identity and demographic information"
+        },
+        {
+          "id": "customer-preferences",
+          "name": "Customer Preferences",
+          "description": "Customer settings, preferences, and communication channels"
+        },
+        {
+          "id": "customer-engagement",
+          "name": "Customer Engagement",
+          "description": "Customer interactions, feedback, and satisfaction metrics"
+        }
+      ]
+    },
+    {
+      "id": "tax",
+      "name": "Tax",
+      "description": "Tax-related data and calculations",
+      "owner": "Tax Department",
+      "lastUpdated": "2024-03-14",
+      "subdomains": [
+        {
+          "id": "tax-calculations",
+          "name": "Tax Calculations",
+          "description": "Tax computation rules and formulas"
+        },
+        {
+          "id": "tax-compliance",
+          "name": "Tax Compliance",
+          "description": "Tax regulations and compliance requirements"
+        },
+        {
+          "id": "tax-reporting",
+          "name": "Tax Reporting",
+          "description": "Tax reports and documentation"
+        }
+      ]
+    },
+    {
+      "id": "vehicle",
+      "name": "Vehicle",
+      "description": "Vehicle registration and management",
+      "owner": "Vehicle Management Team",
+      "lastUpdated": "2024-03-13",
+      "subdomains": [
+        {
+          "id": "vehicle-registration",
+          "name": "Vehicle Registration",
+          "description": "Vehicle registration and ownership information"
+        },
+        {
+          "id": "vehicle-maintenance",
+          "name": "Vehicle Maintenance",
+          "description": "Maintenance records and service history"
+        },
+        {
+          "id": "vehicle-inspection",
+          "name": "Vehicle Inspection",
+          "description": "Inspection records and compliance status"
+        }
+      ]
+    },
+    {
+      "id": "property",
+      "name": "Property",
+      "description": "Property management and assessment",
+      "owner": "Property Management Team",
+      "lastUpdated": "2024-03-12",
+      "subdomains": [
+        {
+          "id": "property-assessment",
+          "name": "Property Assessment",
+          "description": "Property valuation and assessment data"
+        },
+        {
+          "id": "property-ownership",
+          "name": "Property Ownership",
+          "description": "Property ownership and title information"
+        },
+        {
+          "id": "property-maintenance",
+          "name": "Property Maintenance",
+          "description": "Property maintenance and improvement records"
+        }
+      ]
+    },
+    {
+      "id": "business",
+      "name": "Business",
+      "description": "Business registration and licensing",
+      "owner": "Business Services Team",
+      "lastUpdated": "2024-03-11",
+      "subdomains": [
+        {
+          "id": "business-registration",
+          "name": "Business Registration",
+          "description": "Business entity registration and structure"
+        },
+        {
+          "id": "business-licensing",
+          "name": "Business Licensing",
+          "description": "Business licenses and permits"
+        },
+        {
+          "id": "business-compliance",
+          "name": "Business Compliance",
+          "description": "Business regulations and compliance requirements"
+        }
+      ]
+    },
+    {
+      "id": "education",
+      "name": "Education",
+      "description": "Educational institutions and programs",
+      "owner": "Education Department",
+      "lastUpdated": "2024-03-10",
+      "subdomains": [
+        {
+          "id": "education-institutions",
+          "name": "Educational Institutions",
+          "description": "Schools, colleges, and educational facilities"
+        },
+        {
+          "id": "education-programs",
+          "name": "Educational Programs",
+          "description": "Academic programs and curriculum"
+        },
+        {
+          "id": "education-staff",
+          "name": "Education Staff",
+          "description": "Teaching and administrative staff information"
+        }
+      ]
+    },
+    {
+      "id": "healthcare",
+      "name": "Healthcare",
+      "description": "Healthcare facilities and services",
+      "owner": "Healthcare Services Team",
+      "lastUpdated": "2024-03-09",
+      "subdomains": [
+        {
+          "id": "healthcare-facilities",
+          "name": "Healthcare Facilities",
+          "description": "Hospitals, clinics, and medical centers"
+        },
+        {
+          "id": "healthcare-services",
+          "name": "Healthcare Services",
+          "description": "Medical services and treatment programs"
+        },
+        {
+          "id": "healthcare-staff",
+          "name": "Healthcare Staff",
+          "description": "Medical professionals and support staff"
+        }
+      ]
+    },
+    {
+      "id": "finance",
+      "name": "Finance",
+      "description": "Financial services and transactions",
+      "owner": "Finance Department",
+      "lastUpdated": "2024-03-08",
+      "subdomains": [
+        {
+          "id": "finance-transactions",
+          "name": "Financial Transactions",
+          "description": "Payment processing and transaction records"
+        },
+        {
+          "id": "finance-budgeting",
+          "name": "Financial Budgeting",
+          "description": "Budget planning and allocation"
+        },
+        {
+          "id": "finance-reporting",
+          "name": "Financial Reporting",
+          "description": "Financial statements and reports"
+        }
+      ]
+    },
+    {
+      "id": "transportation",
+      "name": "Transportation",
+      "description": "Transportation infrastructure and services",
+      "owner": "Transportation Department",
+      "lastUpdated": "2024-03-07",
+      "subdomains": [
+        {
+          "id": "transportation-infrastructure",
+          "name": "Transportation Infrastructure",
+          "description": "Roads, bridges, and transportation facilities"
+        },
+        {
+          "id": "transportation-services",
+          "name": "Transportation Services",
+          "description": "Public transit and transportation services"
+        },
+        {
+          "id": "transportation-maintenance",
+          "name": "Transportation Maintenance",
+          "description": "Infrastructure maintenance and repairs"
+        }
+      ]
+    },
+    {
+      "id": "utilities",
+      "name": "Utilities",
+      "description": "Utility services and infrastructure",
+      "owner": "Utilities Department",
+      "lastUpdated": "2024-03-06",
+      "subdomains": [
+        {
+          "id": "utilities-services",
+          "name": "Utility Services",
+          "description": "Water, electricity, and gas services"
+        },
+        {
+          "id": "utilities-infrastructure",
+          "name": "Utility Infrastructure",
+          "description": "Utility networks and facilities"
+        },
+        {
+          "id": "utilities-billing",
+          "name": "Utility Billing",
+          "description": "Utility usage and billing information"
+        }
+      ]
+    },
+    {
+      "id": "safety",
+      "name": "Safety",
+      "description": "Public safety and emergency services",
+      "owner": "Safety Department",
+      "lastUpdated": "2024-03-05",
+      "subdomains": [
+        {
+          "id": "safety-emergency",
+          "name": "Emergency Services",
+          "description": "Emergency response and services"
+        },
+        {
+          "id": "safety-enforcement",
+          "name": "Safety Enforcement",
+          "description": "Safety regulations and enforcement"
+        },
+        {
+          "id": "safety-prevention",
+          "name": "Safety Prevention",
+          "description": "Safety education and prevention programs"
+        }
+      ]
+    },
+    {
+      "id": "environment",
+      "name": "Environment",
+      "description": "Environmental protection and management",
+      "owner": "Environment Department",
+      "lastUpdated": "2024-03-04",
+      "subdomains": [
+        {
+          "id": "environment-conservation",
+          "name": "Environmental Conservation",
+          "description": "Natural resource conservation"
+        },
+        {
+          "id": "environment-protection",
+          "name": "Environmental Protection",
+          "description": "Environmental regulations and protection"
+        },
+        {
+          "id": "environment-monitoring",
+          "name": "Environmental Monitoring",
+          "description": "Environmental quality monitoring"
+        }
+      ]
+    },
+    {
+      "id": "housing",
+      "name": "Housing",
+      "description": "Housing development and management",
+      "owner": "Housing Department",
+      "lastUpdated": "2024-03-03",
+      "subdomains": [
+        {
+          "id": "housing-development",
+          "name": "Housing Development",
+          "description": "Housing projects and development"
+        },
+        {
+          "id": "housing-management",
+          "name": "Housing Management",
+          "description": "Housing facilities management"
+        },
+        {
+          "id": "housing-assistance",
+          "name": "Housing Assistance",
+          "description": "Housing support programs"
+        }
+      ]
+    },
+    {
+      "id": "social",
+      "name": "Social Services",
+      "description": "Social welfare and support services",
+      "owner": "Social Services Department",
+      "lastUpdated": "2024-03-02",
+      "subdomains": [
+        {
+          "id": "social-welfare",
+          "name": "Social Welfare",
+          "description": "Welfare programs and services"
+        },
+        {
+          "id": "social-support",
+          "name": "Social Support",
+          "description": "Community support services"
+        },
+        {
+          "id": "social-outreach",
+          "name": "Social Outreach",
+          "description": "Community outreach programs"
+        }
+      ]
+    },
+    {
+      "id": "recreation",
+      "name": "Recreation",
+      "description": "Recreational facilities and programs",
+      "owner": "Recreation Department",
+      "lastUpdated": "2024-03-01",
+      "subdomains": [
+        {
+          "id": "recreation-facilities",
+          "name": "Recreation Facilities",
+          "description": "Parks, sports facilities, and recreation centers"
+        },
+        {
+          "id": "recreation-programs",
+          "name": "Recreation Programs",
+          "description": "Sports and recreation programs"
+        },
+        {
+          "id": "recreation-events",
+          "name": "Recreation Events",
+          "description": "Community events and activities"
+        }
+      ]
+    },
+    {
+      "id": "cultural",
+      "name": "Cultural",
+      "description": "Cultural institutions and programs",
+      "owner": "Cultural Affairs Department",
+      "lastUpdated": "2024-02-29",
+      "subdomains": [
+        {
+          "id": "cultural-arts",
+          "name": "Cultural Arts",
+          "description": "Arts programs and exhibitions"
+        },
+        {
+          "id": "cultural-heritage",
+          "name": "Cultural Heritage",
+          "description": "Heritage preservation and programs"
+        },
+        {
+          "id": "cultural-events",
+          "name": "Cultural Events",
+          "description": "Cultural festivals and events"
+        }
+      ]
+    },
+    {
+      "id": "technology",
+      "name": "Technology",
+      "description": "Technology infrastructure and services",
+      "owner": "Technology Department",
+      "lastUpdated": "2024-02-28",
+      "subdomains": [
+        {
+          "id": "technology-infrastructure",
+          "name": "Technology Infrastructure",
+          "description": "IT systems and infrastructure"
+        },
+        {
+          "id": "technology-services",
+          "name": "Technology Services",
+          "description": "Digital services and applications"
+        },
+        {
+          "id": "technology-support",
+          "name": "Technology Support",
+          "description": "Technical support and maintenance"
+        }
+      ]
+    },
+    {
+      "id": "agriculture",
+      "name": "Agriculture",
+      "description": "Agricultural programs and services",
+      "owner": "Agriculture Department",
+      "lastUpdated": "2024-02-27",
+      "subdomains": [
+        {
+          "id": "agriculture-farming",
+          "name": "Agricultural Farming",
+          "description": "Farming programs and support"
+        },
+        {
+          "id": "agriculture-research",
+          "name": "Agricultural Research",
+          "description": "Agricultural research and development"
+        },
+        {
+          "id": "agriculture-markets",
+          "name": "Agricultural Markets",
+          "description": "Agricultural markets and distribution"
+        }
+      ]
+    },
+    {
+      "id": "tourism",
+      "name": "Tourism",
+      "description": "Tourism and visitor services",
+      "owner": "Tourism Department",
+      "lastUpdated": "2024-02-26",
+      "subdomains": [
+        {
+          "id": "tourism-attractions",
+          "name": "Tourist Attractions",
+          "description": "Tourist sites and attractions"
+        },
+        {
+          "id": "tourism-services",
+          "name": "Tourism Services",
+          "description": "Visitor services and information"
+        },
+        {
+          "id": "tourism-promotion",
+          "name": "Tourism Promotion",
+          "description": "Tourism marketing and promotion"
+        }
+      ]
+    },
+    {
+      "id": "infrastructure",
+      "name": "Infrastructure",
+      "description": "Public infrastructure and facilities",
+      "owner": "Infrastructure Department",
+      "lastUpdated": "2024-02-25",
+      "subdomains": [
+        {
+          "id": "infrastructure-facilities",
+          "name": "Public Facilities",
+          "description": "Public buildings and facilities"
+        },
+        {
+          "id": "infrastructure-maintenance",
+          "name": "Infrastructure Maintenance",
+          "description": "Facility maintenance and repairs"
+        },
+        {
+          "id": "infrastructure-planning",
+          "name": "Infrastructure Planning",
+          "description": "Infrastructure development planning"
+        }
+      ]
+    },
+    {
+      "id": "legal",
+      "name": "Legal",
+      "description": "Legal services and regulations",
+      "owner": "Legal Department",
+      "lastUpdated": "2024-02-24",
+      "subdomains": [
+        {
+          "id": "legal-services",
+          "name": "Legal Services",
+          "description": "Legal assistance and services"
+        },
+        {
+          "id": "legal-regulations",
+          "name": "Legal Regulations",
+          "description": "Regulatory compliance and enforcement"
+        },
+        {
+          "id": "legal-documentation",
+          "name": "Legal Documentation",
+          "description": "Legal documents and records"
+        }
+      ]
+    },
+    {
+      "id": "planning",
+      "name": "Planning",
+      "description": "Urban and regional planning",
+      "owner": "Planning Department",
+      "lastUpdated": "2024-02-23",
+      "subdomains": [
+        {
+          "id": "planning-urban",
+          "name": "Urban Planning",
+          "description": "Urban development planning"
+        },
+        {
+          "id": "planning-zoning",
+          "name": "Zoning Planning",
+          "description": "Zoning regulations and planning"
+        },
+        {
+          "id": "planning-development",
+          "name": "Development Planning",
+          "description": "Development projects and planning"
+        }
+      ]
+    },
+    {
+      "id": "communications",
+      "name": "Communications",
+      "description": "Public communications and media",
+      "owner": "Communications Department",
+      "lastUpdated": "2024-02-22",
+      "subdomains": [
+        {
+          "id": "communications-media",
+          "name": "Media Relations",
+          "description": "Media communications and relations"
+        },
+        {
+          "id": "communications-public",
+          "name": "Public Communications",
+          "description": "Public information and announcements"
+        },
+        {
+          "id": "communications-digital",
+          "name": "Digital Communications",
+          "description": "Digital media and online communications"
+        }
+      ]
+    },
+    {
+      "id": "property-management",
+      "name": "Property Management",
+      "description": "Property management and maintenance",
+      "owner": "Property Management Team",
+      "lastUpdated": "2024-02-21",
+      "subdomains": [
+        {
+          "id": "property-management-facilities",
+          "name": "Facility Management",
+          "description": "Property facilities management"
+        },
+        {
+          "id": "property-management-maintenance",
+          "name": "Property Maintenance",
+          "description": "Property maintenance and repairs"
+        },
+        {
+          "id": "property-management-tenants",
+          "name": "Tenant Management",
+          "description": "Tenant relations and services"
+        }
+      ]
+    }
+  ]
+} 

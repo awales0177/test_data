@@ -1,0 +1,46 @@
+{
+  "applications": [
+    {
+      "id": 1,
+      "name": "Customer Portal",
+      "description": "Self-service portal for customers to manage their accounts and services",
+      "domains": ["customer", "technology"],
+      "link": "https://customer-portal.example.com"
+    },
+    {
+      "id": 2,
+      "name": "Order Management System",
+      "description": "Enterprise system for managing orders and inventory",
+      "domains": ["business", "technology"],
+      "link": "https://oms.example.com"
+    },
+    {
+      "id": 3,
+      "name": "Analytics Dashboard",
+      "description": "Real-time analytics and reporting dashboard",
+      "domains": ["finance", "technology"],
+      "link": "https://analytics.example.com"
+    },
+    {
+      "id": 4,
+      "name": "Payment Gateway",
+      "description": "Secure payment processing system",
+      "domains": ["finance", "safety"],
+      "link": "https://payments.example.com"
+    },
+    {
+      "id": 5,
+      "name": "Mobile App",
+      "description": "Cross-platform mobile application",
+      "domains": ["technology", "communications"],
+      "link": "https://mobile.example.com"
+    },
+    {
+      "id": 6,
+      "name": "Admin Console",
+      "description": "Administrative interface for system management",
+      "domains": ["technology", "infrastructure"],
+      "link": "https://admin.example.com"
+    }
+  ]
+} 
