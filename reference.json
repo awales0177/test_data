@@ -7,7 +7,8 @@
       "description": "Standard ISO country codes and names",
       "lastUpdated": "2024-03-20T10:00:00Z",
       "version": "1.0.0",
-      "owner": "Data Governance Team"
+      "owner": "Data Governance Team",
+      "swaggerPage": "https://api.example.com/docs/country-codes"
     },
     {
       "id": "ref-002",
@@ -16,7 +17,8 @@
       "description": "ISO 4217 currency codes and exchange rates",
       "lastUpdated": "2024-03-19T15:30:00Z",
       "version": "2.1.0",
-      "owner": "Finance Team"
+      "owner": "Finance Team",
+      "swaggerPage": "https://api.example.com/docs/currency-codes"
     },
     {
       "id": "ref-003",
@@ -25,7 +27,178 @@
       "description": "NAICS and SIC industry classification codes",
       "lastUpdated": "2024-03-18T09:15:00Z",
       "version": "1.5.0",
-      "owner": "Business Intelligence Team"
+      "owner": "Business Intelligence Team",
+      "swaggerPage": "https://api.example.com/docs/industry-classifications"
+    },
+    {
+      "id": "ref-004",
+      "name": "Language Codes",
+      "category": "Linguistics",
+      "description": "ISO 639 language codes",
+      "lastUpdated": "2024-03-17T11:00:00Z",
+      "version": "1.0.2",
+      "owner": "Localization Team",
+      "swaggerPage": "https://api.example.com/docs/language-codes"
+    },
+    {
+      "id": "ref-005",
+      "name": "Time Zones",
+      "category": "Geography",
+      "description": "IANA time zone database entries",
+      "lastUpdated": "2024-03-16T08:20:00Z",
+      "version": "3.0.1",
+      "owner": "Infrastructure Team",
+      "swaggerPage": "https://api.example.com/docs/time-zones"
+    },
+    {
+      "id": "ref-006",
+      "name": "Measurement Units",
+      "category": "Science",
+      "description": "SI and Imperial measurement unit definitions",
+      "lastUpdated": "2024-03-15T13:00:00Z",
+      "version": "2.0.0",
+      "owner": "Standards Team",
+      "swaggerPage": "https://api.example.com/docs/measurement-units"
+    },
+    {
+      "id": "ref-007",
+      "name": "Vehicle Types",
+      "category": "Transportation",
+      "description": "Standard vehicle classification types",
+      "lastUpdated": "2024-03-14T09:00:00Z",
+      "version": "1.1.0",
+      "owner": "Logistics Team",
+      "swaggerPage": "https://api.example.com/docs/vehicle-types"
+    },
+    {
+      "id": "ref-008",
+      "name": "Color Codes",
+      "category": "Design",
+      "description": "Standard color names and HEX/RGB codes",
+      "lastUpdated": "2024-03-13T17:45:00Z",
+      "version": "1.3.3",
+      "owner": "UX Team",
+      "swaggerPage": "https://api.example.com/docs/color-codes"
+    },
+    {
+      "id": "ref-009",
+      "name": "Product Categories",
+      "category": "Commerce",
+      "description": "Standard retail product category definitions",
+      "lastUpdated": "2024-03-12T10:30:00Z",
+      "version": "2.2.1",
+      "owner": "Catalog Team",
+      "swaggerPage": "https://api.example.com/docs/product-categories"
+    },
+    {
+      "id": "ref-010",
+      "name": "Device Types",
+      "category": "Technology",
+      "description": "Standard device type classifications",
+      "lastUpdated": "2024-03-11T14:10:00Z",
+      "version": "1.4.0",
+      "owner": "Hardware Team",
+      "swaggerPage": "https://api.example.com/docs/device-types"
+    },
+    {
+      "id": "ref-011",
+      "name": "Medical Codes",
+      "category": "Healthcare",
+      "description": "ICD-10 and SNOMED clinical codes",
+      "lastUpdated": "2024-03-10T13:45:00Z",
+      "version": "3.1.2",
+      "owner": "Health Informatics Team",
+      "swaggerPage": "https://api.example.com/docs/medical-codes"
+    },
+    {
+      "id": "ref-012",
+      "name": "Airport Codes",
+      "category": "Transportation",
+      "description": "IATA and ICAO airport codes",
+      "lastUpdated": "2024-03-09T11:15:00Z",
+      "version": "2.0.0",
+      "owner": "Travel Data Team",
+      "swaggerPage": "https://api.example.com/docs/airport-codes"
+    },
+    {
+      "id": "ref-013",
+      "name": "Payment Methods",
+      "category": "Finance",
+      "description": "Accepted digital and physical payment types",
+      "lastUpdated": "2024-03-08T09:00:00Z",
+      "version": "1.0.1",
+      "owner": "Payments Team",
+      "swaggerPage": "https://api.example.com/docs/payment-methods"
+    },
+    {
+      "id": "ref-014",
+      "name": "Job Titles",
+      "category": "HR",
+      "description": "Standardized job roles and titles",
+      "lastUpdated": "2024-03-07T15:25:00Z",
+      "version": "1.2.5",
+      "owner": "HR Data Team",
+      "swaggerPage": "https://api.example.com/docs/job-titles"
+    },
+    {
+      "id": "ref-015",
+      "name": "Education Levels",
+      "category": "Education",
+      "description": "Standard education qualification levels",
+      "lastUpdated": "2024-03-06T16:10:00Z",
+      "version": "1.1.3",
+      "owner": "Academic Records Team",
+      "swaggerPage": "https://api.example.com/docs/education-levels"
+    },
+    {
+      "id": "ref-016",
+      "name": "Building Types",
+      "category": "Construction",
+      "description": "Classification of building structures",
+      "lastUpdated": "2024-03-05T12:00:00Z",
+      "version": "1.3.0",
+      "owner": "Facilities Team",
+      "swaggerPage": "https://api.example.com/docs/building-types"
+    },
+    {
+      "id": "ref-017",
+      "name": "Browser Versions",
+      "category": "Technology",
+      "description": "Supported browser versions and user agents",
+      "lastUpdated": "2024-03-04T14:45:00Z",
+      "version": "2.0.0",
+      "owner": "Web Dev Team",
+      "swaggerPage": "https://api.example.com/docs/browser-versions"
+    },
+    {
+      "id": "ref-018",
+      "name": "Weather Conditions",
+      "category": "Environment",
+      "description": "Standard weather conditions and codes",
+      "lastUpdated": "2024-03-03T08:30:00Z",
+      "version": "1.0.0",
+      "owner": "Climate Team",
+      "swaggerPage": "https://api.example.com/docs/weather-conditions"
+    },
+    {
+      "id": "ref-019",
+      "name": "Legal Entity Types",
+      "category": "Legal",
+      "description": "Types of business and legal entities",
+      "lastUpdated": "2024-03-02T10:30:00Z",
+      "version": "1.5.0",
+      "owner": "Legal Compliance Team",
+      "swaggerPage": "https://api.example.com/docs/legal-entity-types"
+    },
+    {
+      "id": "ref-020",
+      "name": "Product Lifecycle States",
+      "category": "Product",
+      "description": "Lifecycle stages from concept to retirement",
+      "lastUpdated": "2024-03-01T09:20:00Z",
+      "version": "2.0.4",
+      "owner": "Product Ops Team",
+      "swaggerPage": "https://api.example.com/docs/product-lifecycle"
     }
   ]
-} 
+}
