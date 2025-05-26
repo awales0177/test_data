@@ -16,7 +16,7 @@
         "iso",
         "contact_details",
         "purchase_history"
-      ]
+      ],
       "meta": {
         "tier": "gold",
         "verified": true
@@ -78,7 +78,7 @@
         "iso",
         "contact_details",
         "purchase_history"
-      ]
+      ],
       "meta": {
         "tier": "silver",
         "verified": true
@@ -141,7 +141,7 @@
         "iso",
         "contact_details",
         "purchase_history"
-      ]
+      ],
       "meta": {
         "tier": "bronze",
         "verified": false
@@ -206,7 +206,7 @@
         "iso",
         "contact_details",
         "purchase_history"
-      ]
+      ],
       "meta": {
         "tier": "bronze",
         "verified": false
@@ -235,7 +235,7 @@
         "iso",
         "contact_details",
         "purchase_history"
-      ]
+      ],
       "meta": {
         "tier": "gold",
         "verified": true
