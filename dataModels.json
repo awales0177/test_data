@@ -12,6 +12,11 @@
       "specMaintainer": "Jane Smith",
       "maintainerEmail": "",
       "domain": ["Customer", "Data", "Analytics"],
+      "referenceData": [
+        "iso",
+        "contact_details",
+        "purchase_history"
+      ]
       "meta": {
         "tier": "gold",
         "verified": true
@@ -69,6 +74,11 @@
       "specMaintainer": "Michael Chen",
       "maintainerEmail": "michael.chen@example.com",
       "domain": ["Product", "Inventory", "E-commerce"],
+      "referenceData": [
+        "iso",
+        "contact_details",
+        "purchase_history"
+      ]
       "meta": {
         "tier": "silver",
         "verified": true
@@ -127,6 +137,11 @@
       "specMaintainer": "Sarah Johnson",
       "maintainerEmail": "sarah.johnson@example.com",
       "domain": ["Orders", "Logistics", "Finance", "Customer"],
+      "referenceData": [
+        "iso",
+        "contact_details",
+        "purchase_history"
+      ]
       "meta": {
         "tier": "bronze",
         "verified": false
@@ -187,6 +202,11 @@
       "specMaintainer": "David Wilson",
       "maintainerEmail": "david.wilson@example.com",
       "domain": ["Customer", "Data", "Legacy"],
+      "referenceData": [
+        "iso",
+        "contact_details",
+        "purchase_history"
+      ]
       "meta": {
         "tier": "bronze",
         "verified": false
@@ -211,6 +231,11 @@
       "specMaintainer": "Emily Rodriguez",
       "maintainerEmail": "emily.rodriguez@example.com",
       "domain": ["Marketing", "Analytics", "Customer"],
+      "referenceData": [
+        "iso",
+        "contact_details",
+        "purchase_history"
+      ]
       "meta": {
         "tier": "gold",
         "verified": true
