@@ -53,6 +53,7 @@
       "resources": {
         "code": "",
         "documentation": "https://docs.example.com/customer-data-model",
+        "etl": "https://docs.example.com/customer-data-model",
         "tools": "",
         "git": "https://git.example.com/customer-data-model",
         "validation": ""
