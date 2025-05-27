@@ -51,12 +51,12 @@
         }
       ],
       "resources": {
-        "code": "",
+        "code": "https://docs.example.com/customer-data-model",
         "documentation": "https://docs.example.com/customer-data-model",
         "etl": "https://docs.example.com/customer-data-model",
-        "tools": "",
+        "tools": "https://docs.example.com/customer-data-model",
         "git": "https://git.example.com/customer-data-model",
-        "validation": ""
+        "validation": "https://docs.example.com/customer-data-model"
       },
       "users": [
         "Auth Service",
