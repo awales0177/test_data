@@ -55,9 +55,9 @@
         "documentation": "https://docs.example.com/customer-data-model",
         "rules": "https://docs.example.com/customer-data-model",
         "tools": {
-          "tool1":"https://docs.example.com/customer-data-model",
-          "tool2":"https://docs.example.com/customer-data-model",
-          "tool3":"https://docs.example.com/customer-data-model"
+          "map":"https://docs.example.com/customer-data-model",
+          "screw":"https://docs.example.com/customer-data-model",
+          "hammer":"https://docs.example.com/customer-data-model"
         },
         "git": "https://git.example.com/customer-data-model",
         "validation": "https://docs.example.com/customer-data-model"
