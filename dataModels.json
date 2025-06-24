@@ -54,7 +54,11 @@
         "code": "https://docs.example.com/customer-data-model",
         "documentation": "https://docs.example.com/customer-data-model",
         "rules": "https://docs.example.com/customer-data-model",
-        "tools": "https://docs.example.com/customer-data-model",
+        "tools": {
+          "tool1":"https://docs.example.com/customer-data-model",
+          "tool2":"https://docs.example.com/customer-data-model",
+          "tool3":"https://docs.example.com/customer-data-model"
+        },
         "git": "https://git.example.com/customer-data-model",
         "validation": "https://docs.example.com/customer-data-model"
       },
@@ -116,7 +120,11 @@
       "resources": {
         "code": "https://github.com/org/product-catalog",
         "documentation": "https://docs.example.com/product-catalog",
-        "tools": "https://tools.example.com/product-catalog",
+        "tools": {
+          "tool1":"https://docs.example.com/customer-data-model",
+          "tool2":"https://docs.example.com/customer-data-model",
+          "tool3":"https://docs.example.com/customer-data-model"
+        },
         "git": "https://git.example.com/product-catalog",
         "validation": "https://validation.example.com/product-catalog"
       },
@@ -179,7 +187,11 @@
       "resources": {
         "code": "https://github.com/org/order-management",
         "documentation": "https://docs.example.com/order-management",
-        "tools": "https://tools.example.com/order-management",
+        "tools": {
+          "tool1":"https://docs.example.com/customer-data-model",
+          "tool2":"https://docs.example.com/customer-data-model",
+          "tool3":"https://docs.example.com/customer-data-model"
+        },
         "git": "https://git.example.com/order-management",
         "validation": "https://validation.example.com/order-management"
       },
@@ -215,7 +227,11 @@
       "resources": {
         "code": "https://github.com/org/legacy-customer-data",
         "documentation": "https://docs.example.com/legacy-customer-data",
-        "tools": "https://tools.example.com/legacy-customer-data",
+        "tools": {
+          "tool1":"https://docs.example.com/customer-data-model",
+          "tool2":"https://docs.example.com/customer-data-model",
+          "tool3":"https://docs.example.com/customer-data-model"
+        },
         "git": "https://git.example.com/legacy-customer-data",
         "validation": "https://validation.example.com/legacy-customer-data"
       }
@@ -244,7 +260,11 @@
       "resources": {
         "code": "https://github.com/org/marketing-campaign-data",
         "documentation": "https://docs.example.com/marketing-campaign-data",
-        "tools": "https://tools.example.com/marketing-campaign-data",
+        "tools": {
+          "tool1":"https://docs.example.com/customer-data-model",
+          "tool2":"https://docs.example.com/customer-data-model",
+          "tool3":"https://docs.example.com/customer-data-model"
+        },
         "git": "https://git.example.com/marketing-campaign-data",
         "validation": "https://validation.example.com/marketing-campaign-data"
       }
@@ -268,7 +288,11 @@
       "resources": {
         "code": "https://github.com/org/supplier-information",
         "documentation": "https://docs.example.com/supplier-information",
-        "tools": "",
+        "tools": {
+          "tool1":"https://docs.example.com/customer-data-model",
+          "tool2":"https://docs.example.com/customer-data-model",
+          "tool3":"https://docs.example.com/customer-data-model"
+        },
         "git": "https://git.example.com/supplier-information",
         "validation": "https://validation.example.com/supplier-information"
       }
@@ -292,7 +316,11 @@
       "resources": {
         "code": "https://github.com/org/healthcare-facility-management",
         "documentation": "https://docs.example.com/healthcare-facility-management",
-        "tools": "https://tools.example.com/healthcare-facility-management",
+        "tools": {
+          "tool1":"https://docs.example.com/customer-data-model",
+          "tool2":"https://docs.example.com/customer-data-model",
+          "tool3":"https://docs.example.com/customer-data-model"
+        },
         "git": "https://git.example.com/healthcare-facility-management",
         "validation": "https://validation.example.com/healthcare-facility-management"
       }
@@ -316,7 +344,11 @@
       "resources": {
         "code": "https://github.com/org/financial-transaction-model",
         "documentation": "https://docs.example.com/financial-transaction-model",
-        "tools": "https://tools.example.com/financial-transaction-model",
+        "tools": {
+          "tool1":"https://docs.example.com/customer-data-model",
+          "tool2":"https://docs.example.com/customer-data-model",
+          "tool3":"https://docs.example.com/customer-data-model"
+        },
         "git": "https://git.example.com/financial-transaction-model",
         "validation": "https://validation.example.com/financial-transaction-model"
       },
@@ -344,7 +376,11 @@
       "resources": {
         "code": "https://github.com/org/transportation-network",
         "documentation": "https://docs.example.com/transportation-network",
-        "tools": "https://tools.example.com/transportation-network",
+        "tools": {
+          "tool1":"https://docs.example.com/customer-data-model",
+          "tool2":"https://docs.example.com/customer-data-model",
+          "tool3":"https://docs.example.com/customer-data-model"
+        },
         "git": "https://git.example.com/transportation-network",
         "validation": "https://validation.example.com/transportation-network"
       }
@@ -368,7 +404,11 @@
       "resources": {
         "code": "https://github.com/org/utility-consumption",
         "documentation": "https://docs.example.com/utility-consumption",
-        "tools": "https://tools.example.com/utility-consumption",
+        "tools": {
+          "tool1":"https://docs.example.com/customer-data-model",
+          "tool2":"https://docs.example.com/customer-data-model",
+          "tool3":"https://docs.example.com/customer-data-model"
+        },
         "git": "https://git.example.com/utility-consumption",
         "validation": "https://validation.example.com/utility-consumption"
       }
@@ -392,7 +432,11 @@
       "resources": {
         "code": "https://github.com/org/housing-development",
         "documentation": "https://docs.example.com/housing-development",
-        "tools": "https://tools.example.com/housing-development",
+        "tools": {
+          "tool1":"https://docs.example.com/customer-data-model",
+          "tool2":"https://docs.example.com/customer-data-model",
+          "tool3":"https://docs.example.com/customer-data-model"
+        },
         "git": "https://git.example.com/housing-development",
         "validation": "https://validation.example.com/housing-development"
       }
@@ -416,7 +460,11 @@
       "resources": {
         "code": "https://github.com/org/social-services-programs",
         "documentation": "https://docs.example.com/social-services-programs",
-        "tools": "https://tools.example.com/social-services-programs",
+        "tools": {
+          "tool1":"https://docs.example.com/customer-data-model",
+          "tool2":"https://docs.example.com/customer-data-model",
+          "tool3":"https://docs.example.com/customer-data-model"
+        },
         "git": "https://git.example.com/social-services-programs",
         "validation": "https://validation.example.com/social-services-programs"
       }
@@ -440,7 +488,11 @@
       "resources": {
         "code": "https://github.com/org/recreation-facilities",
         "documentation": "https://docs.example.com/recreation-facilities",
-        "tools": "https://tools.example.com/recreation-facilities",
+        "tools": {
+          "tool1":"https://docs.example.com/customer-data-model",
+          "tool2":"https://docs.example.com/customer-data-model",
+          "tool3":"https://docs.example.com/customer-data-model"
+        },
         "git": "https://git.example.com/recreation-facilities",
         "validation": "https://validation.example.com/recreation-facilities"
       }
@@ -464,7 +516,11 @@
       "resources": {
         "code": "https://github.com/org/cultural-programs",
         "documentation": "https://docs.example.com/cultural-programs",
-        "tools": "https://tools.example.com/cultural-programs",
+        "tools": {
+          "tool1":"https://docs.example.com/customer-data-model",
+          "tool2":"https://docs.example.com/customer-data-model",
+          "tool3":"https://docs.example.com/customer-data-model"
+        },
         "git": "https://git.example.com/cultural-programs",
         "validation": "https://validation.example.com/cultural-programs"
       }
@@ -488,7 +544,11 @@
       "resources": {
         "code": "https://github.com/org/technology-infrastructure",
         "documentation": "https://docs.example.com/technology-infrastructure",
-        "tools": "https://tools.example.com/technology-infrastructure",
+        "tools": {
+          "tool1":"https://docs.example.com/customer-data-model",
+          "tool2":"https://docs.example.com/customer-data-model",
+          "tool3":"https://docs.example.com/customer-data-model"
+        },
         "git": "https://git.example.com/technology-infrastructure",
         "validation": "https://validation.example.com/technology-infrastructure"
       },
@@ -518,7 +578,11 @@
       "resources": {
         "code": "https://github.com/org/agricultural-programs",
         "documentation": "https://docs.example.com/agricultural-programs",
-        "tools": "https://tools.example.com/agricultural-programs",
+        "tools": {
+          "tool1":"https://docs.example.com/customer-data-model",
+          "tool2":"https://docs.example.com/customer-data-model",
+          "tool3":"https://docs.example.com/customer-data-model"
+        },
         "git": "https://git.example.com/agricultural-programs",
         "validation": "https://validation.example.com/agricultural-programs"
       }
@@ -566,7 +630,11 @@
       "resources": {
         "code": "https://github.com/org/infrastructure-management",
         "documentation": "https://docs.example.com/infrastructure-management",
-        "tools": "https://tools.example.com/infrastructure-management",
+        "tools": {
+          "tool1":"https://docs.example.com/customer-data-model",
+          "tool2":"https://docs.example.com/customer-data-model",
+          "tool3":"https://docs.example.com/customer-data-model"
+        },
         "git": "https://git.example.com/infrastructure-management",
         "validation": "https://validation.example.com/infrastructure-management"
       }
