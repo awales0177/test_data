@@ -13,7 +13,7 @@
       "modelShortName": "PROD",
       "contractVersion": "1.0.0",
       "deliveredVersion": ["1.2.0","1.1.0","1.0.0"],
-      "deliveryFrequency": ["Real-Time","Periodic", "Feeds", "One-Time", "aperiodic"],
+      "deliveryFrequency": ["Feeds", "One-Time"],
       "startDate": "2024-02-01",
       "endDate": "unk",
       "fileFormat": "JSON",
