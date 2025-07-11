@@ -18,7 +18,7 @@
       "endDate": "unk",
       "fileFormat": "JSON",
       "restricted": false,
-      "location": "us-east-1",
+      "location": ["s3://bucket/folder/file.json","s3://bucket/folder/file2.json"],
       "todo": {
         "date": "2024-03-25T10:00:00Z",
         "items": [
