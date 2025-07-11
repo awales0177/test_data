@@ -13,7 +13,7 @@
       "modelShortName": "PROD",
       "contractVersion": "1.0.0",
       "deliveredVersion": ["1.2.0","1.1.0","1.0.0"],
-      "deliveryFrequency": "real-time",
+      "deliveryFrequency": ["real-time","slow"],
       "startDate": "2024-02-01T09:15:00Z",
       "endDate": null,
       "fileFormat": "JSON",
