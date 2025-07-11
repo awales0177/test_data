@@ -18,7 +18,10 @@
       "endDate": "unk",
       "fileFormat": "JSON",
       "restricted": false,
-      "location": ["s3://bucket/folder/file.json","s3://bucket/folder/file2.json"],
+      "location": {
+        "s3://bucket/folder/file.json": "Primary configuration file",
+        "s3://bucket/folder/file2.json": "Backup or override configuration file"
+      },
       "todo": {
         "date": "2024-03-25T10:00:00Z",
         "items": [
