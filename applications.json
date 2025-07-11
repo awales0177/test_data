@@ -9,7 +9,7 @@
     },
     {
       "id": 2,
-      "name": "Order Management System",
+      "name": "Catalog",
       "description": "Enterprise system for managing orders and inventory",
       "domains": ["business", "technology"],
       "link": "https://oms.example.com"
