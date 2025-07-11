@@ -9,7 +9,7 @@
       "parentSystem": "Product Management System",
       "dataProducer": "Product",
       "dataValidator": "Product Data Team",
-      "dataConsumer": ["Catalog ","Other"],
+      "dataConsumer": ["Catalog","Other"],
       "modelShortName": "PROD",
       "contractVersion": "1.0.0",
       "deliveredVersion": ["1.2.0","1.1.0","1.0.0"],
