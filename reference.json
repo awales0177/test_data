@@ -13,20 +13,95 @@
           "id": "ref-001-1",
           "name": "US States",
           "description": "List of US states and their codes",
-          "columns": ["stateCode", "stateName"],
+          "columns": [
+            "stateCode",
+            "stateName"
+          ],
           "rows": [
-            { "stateCode": "CA", "stateName": "California" },
-            { "stateCode": "NY", "stateName": "New York" }
+            {
+              "stateCode": "CA",
+              "stateName": "California"
+            },
+            {
+              "stateCode": "NY",
+              "stateName": "New York"
+            }
           ]
         },
         {
           "id": "ref-001-2",
           "name": "Canadian Provinces",
           "description": "List of Canadian provinces and their codes",
-          "columns": ["provinceCode", "provinceName"],
+          "columns": [
+            "provinceCode",
+            "provinceName"
+          ],
           "rows": [
-            { "provinceCode": "ON", "provinceName": "Ontario" },
-            { "provinceCode": "QC", "provinceName": "Quebec" }
+            {
+              "provinceCode": "ON",
+              "provinceName": "Ontario"
+            },
+            {
+              "provinceCode": "QC",
+              "provinceName": "Quebec"
+            }
+          ]
+        },
+        {
+          "id": "ref-001-3",
+          "name": "Country to Continent Mapping",
+          "description": "Map countries to their continents",
+          "columns": [
+            "countryCode",
+            "continent"
+          ],
+          "rows": [
+            {
+              "countryCode": "US",
+              "continent": "North America"
+            },
+            {
+              "countryCode": "FR",
+              "continent": "Europe"
+            }
+          ]
+        },
+        {
+          "id": "ref-001-4",
+          "name": "Country Calling Codes",
+          "description": "Telephone dialing codes for countries",
+          "columns": [
+            "countryCode",
+            "callingCode"
+          ],
+          "rows": [
+            {
+              "countryCode": "US",
+              "callingCode": "+1"
+            },
+            {
+              "countryCode": "GB",
+              "callingCode": "+44"
+            }
+          ]
+        },
+        {
+          "id": "ref-001-5",
+          "name": "Official Country Names",
+          "description": "Formal names of countries",
+          "columns": [
+            "countryCode",
+            "officialName"
+          ],
+          "rows": [
+            {
+              "countryCode": "DE",
+              "officialName": "Federal Republic of Germany"
+            },
+            {
+              "countryCode": "JP",
+              "officialName": "Japan"
+            }
           ]
         }
       ]
@@ -36,8 +111,8 @@
       "name": "Currency Codes",
       "category": "Finance",
       "description": "ISO 4217 currency codes and exchange rates",
-      "lastUpdated": "2024-03-19T15:30:00Z",
-      "version": "2.1.0",
+      "lastUpdated": "2024-03-19T10:00:00Z",
+      "version": "3.4.6",
       "owner": "Finance Team",
       "childTables": []
     },
@@ -46,8 +121,8 @@
       "name": "Industry Classifications",
       "category": "Business",
       "description": "NAICS and SIC industry classification codes",
-      "lastUpdated": "2024-03-18T09:15:00Z",
-      "version": "1.5.0",
+      "lastUpdated": "2024-03-18T10:00:00Z",
+      "version": "1.6.9",
       "owner": "Business Intelligence Team",
       "childTables": []
     },
@@ -56,8 +131,8 @@
       "name": "Language Codes",
       "category": "Linguistics",
       "description": "ISO 639 language codes",
-      "lastUpdated": "2024-03-17T11:00:00Z",
-      "version": "1.0.2",
+      "lastUpdated": "2024-03-17T10:00:00Z",
+      "version": "2.8.2",
       "owner": "Localization Team",
       "childTables": []
     },
@@ -66,8 +141,8 @@
       "name": "Time Zones",
       "category": "Geography",
       "description": "IANA time zone database entries",
-      "lastUpdated": "2024-03-16T08:20:00Z",
-      "version": "3.0.1",
+      "lastUpdated": "2024-03-16T10:00:00Z",
+      "version": "3.0.5",
       "owner": "Infrastructure Team",
       "childTables": []
     },
@@ -76,8 +151,8 @@
       "name": "Measurement Units",
       "category": "Science",
       "description": "SI and Imperial measurement unit definitions",
-      "lastUpdated": "2024-03-15T13:00:00Z",
-      "version": "2.0.0",
+      "lastUpdated": "2024-03-15T10:00:00Z",
+      "version": "1.2.8",
       "owner": "Standards Team",
       "childTables": []
     },
@@ -86,8 +161,8 @@
       "name": "Vehicle Types",
       "category": "Transportation",
       "description": "Standard vehicle classification types",
-      "lastUpdated": "2024-03-14T09:00:00Z",
-      "version": "1.1.0",
+      "lastUpdated": "2024-03-14T10:00:00Z",
+      "version": "2.4.1",
       "owner": "Logistics Team",
       "childTables": []
     },
@@ -96,8 +171,8 @@
       "name": "Color Codes",
       "category": "Design",
       "description": "Standard color names and HEX/RGB codes",
-      "lastUpdated": "2024-03-13T17:45:00Z",
-      "version": "1.3.3",
+      "lastUpdated": "2024-03-13T10:00:00Z",
+      "version": "3.6.4",
       "owner": "UX Team",
       "childTables": []
     },
@@ -106,8 +181,8 @@
       "name": "Product Categories",
       "category": "Commerce",
       "description": "Standard retail product category definitions",
-      "lastUpdated": "2024-03-12T10:30:00Z",
-      "version": "2.2.1",
+      "lastUpdated": "2024-03-12T10:00:00Z",
+      "version": "1.8.7",
       "owner": "Catalog Team",
       "childTables": []
     },
@@ -116,8 +191,8 @@
       "name": "Device Types",
       "category": "Technology",
       "description": "Standard device type classifications",
-      "lastUpdated": "2024-03-11T14:10:00Z",
-      "version": "1.4.0",
+      "lastUpdated": "2024-03-11T10:00:00Z",
+      "version": "2.0.0",
       "owner": "Hardware Team",
       "childTables": []
     },
@@ -126,8 +201,8 @@
       "name": "Medical Codes",
       "category": "Healthcare",
       "description": "ICD-10 and SNOMED clinical codes",
-      "lastUpdated": "2024-03-10T13:45:00Z",
-      "version": "3.1.2",
+      "lastUpdated": "2024-03-10T10:00:00Z",
+      "version": "3.2.3",
       "owner": "Health Informatics Team",
       "childTables": []
     },
@@ -136,8 +211,8 @@
       "name": "Airport Codes",
       "category": "Transportation",
       "description": "IATA and ICAO airport codes",
-      "lastUpdated": "2024-03-09T11:15:00Z",
-      "version": "2.0.0",
+      "lastUpdated": "2024-03-09T10:00:00Z",
+      "version": "1.4.6",
       "owner": "Travel Data Team",
       "childTables": []
     },
@@ -146,8 +221,8 @@
       "name": "Payment Methods",
       "category": "Finance",
       "description": "Accepted digital and physical payment types",
-      "lastUpdated": "2024-03-08T09:00:00Z",
-      "version": "1.0.1",
+      "lastUpdated": "2024-03-08T10:00:00Z",
+      "version": "2.6.9",
       "owner": "Payments Team",
       "childTables": []
     },
@@ -156,8 +231,8 @@
       "name": "Job Titles",
       "category": "HR",
       "description": "Standardized job roles and titles",
-      "lastUpdated": "2024-03-07T15:25:00Z",
-      "version": "1.2.5",
+      "lastUpdated": "2024-03-07T10:00:00Z",
+      "version": "3.8.2",
       "owner": "HR Data Team",
       "childTables": []
     },
@@ -166,8 +241,8 @@
       "name": "Education Levels",
       "category": "Education",
       "description": "Standard education qualification levels",
-      "lastUpdated": "2024-03-06T16:10:00Z",
-      "version": "1.1.3",
+      "lastUpdated": "2024-03-06T10:00:00Z",
+      "version": "1.0.5",
       "owner": "Academic Records Team",
       "childTables": []
     },
@@ -176,8 +251,8 @@
       "name": "Building Types",
       "category": "Construction",
       "description": "Classification of building structures",
-      "lastUpdated": "2024-03-05T12:00:00Z",
-      "version": "1.3.0",
+      "lastUpdated": "2024-03-05T10:00:00Z",
+      "version": "2.2.8",
       "owner": "Facilities Team",
       "childTables": []
     },
@@ -186,8 +261,8 @@
       "name": "Browser Versions",
       "category": "Technology",
       "description": "Supported browser versions and user agents",
-      "lastUpdated": "2024-03-04T14:45:00Z",
-      "version": "2.0.0",
+      "lastUpdated": "2024-03-04T10:00:00Z",
+      "version": "3.4.1",
       "owner": "Web Dev Team",
       "childTables": []
     },
@@ -196,8 +271,8 @@
       "name": "Weather Conditions",
       "category": "Environment",
       "description": "Standard weather conditions and codes",
-      "lastUpdated": "2024-03-03T08:30:00Z",
-      "version": "1.0.0",
+      "lastUpdated": "2024-03-03T10:00:00Z",
+      "version": "1.6.4",
       "owner": "Climate Team",
       "childTables": []
     },
@@ -206,8 +281,8 @@
       "name": "Legal Entity Types",
       "category": "Legal",
       "description": "Types of business and legal entities",
-      "lastUpdated": "2024-03-02T10:30:00Z",
-      "version": "1.5.0",
+      "lastUpdated": "2024-03-02T10:00:00Z",
+      "version": "2.8.7",
       "owner": "Legal Compliance Team",
       "childTables": []
     },
@@ -216,8 +291,8 @@
       "name": "Product Lifecycle States",
       "category": "Product",
       "description": "Lifecycle stages from concept to retirement",
-      "lastUpdated": "2024-03-01T09:20:00Z",
-      "version": "2.0.4",
+      "lastUpdated": "2024-03-01T10:00:00Z",
+      "version": "3.0.0",
       "owner": "Product Ops Team",
       "childTables": []
     }
