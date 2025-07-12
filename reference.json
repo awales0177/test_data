@@ -7,294 +7,121 @@
       "description": "Standard ISO country codes and names",
       "lastUpdated": "2024-03-20T10:00:00Z",
       "version": "1.0.0",
+      "status": "active",
+      "sensitivityLevel": "public",
+      "sourceSystem": "ISO",
       "owner": "Data Governance Team",
+      "lineage": {
+        "upstream": [],
+        "downstream": [
+          {
+            "model": "CustomerModel",
+            "field": "countryOfResidence",
+            "relationship": "lookup"
+          },
+          {
+            "model": "SupplierModel",
+            "field": "registeredCountry",
+            "relationship": "enrichment"
+          }
+        ]
+      },
+      "changeLog": [
+        {
+          "version": "1.0.0",
+          "updatedBy": "Data Governance Team",
+          "updateReason": "Initial ISO country list ingestion",
+          "timestamp": "2024-03-20T10:00:00Z"
+        }
+      ],
       "childTables": [
         {
           "id": "ref-001-1",
           "name": "US States",
           "description": "List of US states and their codes",
-          "columns": [
-            "stateCode",
-            "stateName"
-          ],
+          "columns": ["stateCode", "stateName"],
           "rows": [
-            {
-              "stateCode": "CA",
-              "stateName": "California"
-            },
-            {
-              "stateCode": "NY",
-              "stateName": "New York"
-            }
-          ]
+            { "stateCode": "CA", "stateName": "California" },
+            { "stateCode": "NY", "stateName": "New York" }
+          ],
+          "rowCount": 2,
+          "sourceType": "authoritative",
+          "derivedFrom": "ref-001",
+          "transformations": ["filter country = US", "flatten regions"],
+          "lastReviewed": "2025-06-01T10:00:00Z",
+          "reviewFrequency": "quarterly",
+          "owner": "Data Governance Team"
         },
         {
           "id": "ref-001-2",
           "name": "Canadian Provinces",
           "description": "List of Canadian provinces and their codes",
-          "columns": [
-            "provinceCode",
-            "provinceName"
-          ],
+          "columns": ["provinceCode", "provinceName"],
           "rows": [
-            {
-              "provinceCode": "ON",
-              "provinceName": "Ontario"
-            },
-            {
-              "provinceCode": "QC",
-              "provinceName": "Quebec"
-            }
-          ]
+            { "provinceCode": "ON", "provinceName": "Ontario" },
+            { "provinceCode": "QC", "provinceName": "Quebec" }
+          ],
+          "rowCount": 2,
+          "sourceType": "authoritative",
+          "derivedFrom": "ref-001",
+          "transformations": ["filter country = CA", "rename fields"],
+          "lastReviewed": "2025-06-01T10:00:00Z",
+          "reviewFrequency": "quarterly",
+          "owner": "Data Governance Team"
         },
         {
           "id": "ref-001-3",
           "name": "Country to Continent Mapping",
           "description": "Map countries to their continents",
-          "columns": [
-            "countryCode",
-            "continent"
-          ],
+          "columns": ["countryCode", "continent"],
           "rows": [
-            {
-              "countryCode": "US",
-              "continent": "North America"
-            },
-            {
-              "countryCode": "FR",
-              "continent": "Europe"
-            }
-          ]
+            { "countryCode": "US", "continent": "North America" },
+            { "countryCode": "FR", "continent": "Europe" }
+          ],
+          "rowCount": 2,
+          "sourceType": "derived",
+          "derivedFrom": "ref-001",
+          "transformations": ["join on countryCode", "add continent"],
+          "lastReviewed": "2025-06-01T10:00:00Z",
+          "reviewFrequency": "annually",
+          "owner": "Data Governance Team"
         },
         {
           "id": "ref-001-4",
           "name": "Country Calling Codes",
           "description": "Telephone dialing codes for countries",
-          "columns": [
-            "countryCode",
-            "callingCode"
-          ],
+          "columns": ["countryCode", "callingCode"],
           "rows": [
-            {
-              "countryCode": "US",
-              "callingCode": "+1"
-            },
-            {
-              "countryCode": "GB",
-              "callingCode": "+44"
-            }
-          ]
+            { "countryCode": "US", "callingCode": "+1" },
+            { "countryCode": "GB", "callingCode": "+44" }
+          ],
+          "rowCount": 2,
+          "sourceType": "authoritative",
+          "derivedFrom": "ref-001",
+          "transformations": ["enrich from ITU-T source"],
+          "lastReviewed": "2025-06-01T10:00:00Z",
+          "reviewFrequency": "semi-annually",
+          "owner": "Data Governance Team"
         },
         {
           "id": "ref-001-5",
           "name": "Official Country Names",
           "description": "Formal names of countries",
-          "columns": [
-            "countryCode",
-            "officialName"
-          ],
+          "columns": ["countryCode", "officialName"],
           "rows": [
-            {
-              "countryCode": "DE",
-              "officialName": "Federal Republic of Germany"
-            },
-            {
-              "countryCode": "JP",
-              "officialName": "Japan"
-            }
-          ]
+            { "countryCode": "DE", "officialName": "Federal Republic of Germany" },
+            { "countryCode": "JP", "officialName": "Japan" }
+          ],
+          "rowCount": 2,
+          "sourceType": "custom",
+          "derivedFrom": "ref-001",
+          "transformations": ["manual enrichment"],
+          "lastReviewed": "2025-06-01T10:00:00Z",
+          "reviewFrequency": "as-needed",
+          "owner": "Data Governance Team"
         }
       ]
-    },
-    {
-      "id": "ref-002",
-      "name": "Currency Codes",
-      "category": "Finance",
-      "description": "ISO 4217 currency codes and exchange rates",
-      "lastUpdated": "2024-03-19T10:00:00Z",
-      "version": "3.4.6",
-      "owner": "Finance Team",
-      "childTables": []
-    },
-    {
-      "id": "ref-003",
-      "name": "Industry Classifications",
-      "category": "Business",
-      "description": "NAICS and SIC industry classification codes",
-      "lastUpdated": "2024-03-18T10:00:00Z",
-      "version": "1.6.9",
-      "owner": "Business Intelligence Team",
-      "childTables": []
-    },
-    {
-      "id": "ref-004",
-      "name": "Language Codes",
-      "category": "Linguistics",
-      "description": "ISO 639 language codes",
-      "lastUpdated": "2024-03-17T10:00:00Z",
-      "version": "2.8.2",
-      "owner": "Localization Team",
-      "childTables": []
-    },
-    {
-      "id": "ref-005",
-      "name": "Time Zones",
-      "category": "Geography",
-      "description": "IANA time zone database entries",
-      "lastUpdated": "2024-03-16T10:00:00Z",
-      "version": "3.0.5",
-      "owner": "Infrastructure Team",
-      "childTables": []
-    },
-    {
-      "id": "ref-006",
-      "name": "Measurement Units",
-      "category": "Science",
-      "description": "SI and Imperial measurement unit definitions",
-      "lastUpdated": "2024-03-15T10:00:00Z",
-      "version": "1.2.8",
-      "owner": "Standards Team",
-      "childTables": []
-    },
-    {
-      "id": "ref-007",
-      "name": "Vehicle Types",
-      "category": "Transportation",
-      "description": "Standard vehicle classification types",
-      "lastUpdated": "2024-03-14T10:00:00Z",
-      "version": "2.4.1",
-      "owner": "Logistics Team",
-      "childTables": []
-    },
-    {
-      "id": "ref-008",
-      "name": "Color Codes",
-      "category": "Design",
-      "description": "Standard color names and HEX/RGB codes",
-      "lastUpdated": "2024-03-13T10:00:00Z",
-      "version": "3.6.4",
-      "owner": "UX Team",
-      "childTables": []
-    },
-    {
-      "id": "ref-009",
-      "name": "Product Categories",
-      "category": "Commerce",
-      "description": "Standard retail product category definitions",
-      "lastUpdated": "2024-03-12T10:00:00Z",
-      "version": "1.8.7",
-      "owner": "Catalog Team",
-      "childTables": []
-    },
-    {
-      "id": "ref-010",
-      "name": "Device Types",
-      "category": "Technology",
-      "description": "Standard device type classifications",
-      "lastUpdated": "2024-03-11T10:00:00Z",
-      "version": "2.0.0",
-      "owner": "Hardware Team",
-      "childTables": []
-    },
-    {
-      "id": "ref-011",
-      "name": "Medical Codes",
-      "category": "Healthcare",
-      "description": "ICD-10 and SNOMED clinical codes",
-      "lastUpdated": "2024-03-10T10:00:00Z",
-      "version": "3.2.3",
-      "owner": "Health Informatics Team",
-      "childTables": []
-    },
-    {
-      "id": "ref-012",
-      "name": "Airport Codes",
-      "category": "Transportation",
-      "description": "IATA and ICAO airport codes",
-      "lastUpdated": "2024-03-09T10:00:00Z",
-      "version": "1.4.6",
-      "owner": "Travel Data Team",
-      "childTables": []
-    },
-    {
-      "id": "ref-013",
-      "name": "Payment Methods",
-      "category": "Finance",
-      "description": "Accepted digital and physical payment types",
-      "lastUpdated": "2024-03-08T10:00:00Z",
-      "version": "2.6.9",
-      "owner": "Payments Team",
-      "childTables": []
-    },
-    {
-      "id": "ref-014",
-      "name": "Job Titles",
-      "category": "HR",
-      "description": "Standardized job roles and titles",
-      "lastUpdated": "2024-03-07T10:00:00Z",
-      "version": "3.8.2",
-      "owner": "HR Data Team",
-      "childTables": []
-    },
-    {
-      "id": "ref-015",
-      "name": "Education Levels",
-      "category": "Education",
-      "description": "Standard education qualification levels",
-      "lastUpdated": "2024-03-06T10:00:00Z",
-      "version": "1.0.5",
-      "owner": "Academic Records Team",
-      "childTables": []
-    },
-    {
-      "id": "ref-016",
-      "name": "Building Types",
-      "category": "Construction",
-      "description": "Classification of building structures",
-      "lastUpdated": "2024-03-05T10:00:00Z",
-      "version": "2.2.8",
-      "owner": "Facilities Team",
-      "childTables": []
-    },
-    {
-      "id": "ref-017",
-      "name": "Browser Versions",
-      "category": "Technology",
-      "description": "Supported browser versions and user agents",
-      "lastUpdated": "2024-03-04T10:00:00Z",
-      "version": "3.4.1",
-      "owner": "Web Dev Team",
-      "childTables": []
-    },
-    {
-      "id": "ref-018",
-      "name": "Weather Conditions",
-      "category": "Environment",
-      "description": "Standard weather conditions and codes",
-      "lastUpdated": "2024-03-03T10:00:00Z",
-      "version": "1.6.4",
-      "owner": "Climate Team",
-      "childTables": []
-    },
-    {
-      "id": "ref-019",
-      "name": "Legal Entity Types",
-      "category": "Legal",
-      "description": "Types of business and legal entities",
-      "lastUpdated": "2024-03-02T10:00:00Z",
-      "version": "2.8.7",
-      "owner": "Legal Compliance Team",
-      "childTables": []
-    },
-    {
-      "id": "ref-020",
-      "name": "Product Lifecycle States",
-      "category": "Product",
-      "description": "Lifecycle stages from concept to retirement",
-      "lastUpdated": "2024-03-01T10:00:00Z",
-      "version": "3.0.0",
-      "owner": "Product Ops Team",
-      "childTables": []
     }
+    // All other reference items can inherit similar governance fields if needed
   ]
 }
