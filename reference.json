@@ -8,7 +8,28 @@
       "lastUpdated": "2024-03-20T10:00:00Z",
       "version": "1.0.0",
       "owner": "Data Governance Team",
-      "swaggerPage": "https://api.example.com/docs/country-codes"
+      "childTables": [
+        {
+          "id": "ref-001-1",
+          "name": "US States",
+          "description": "List of US states and their codes",
+          "columns": ["stateCode", "stateName"],
+          "rows": [
+            { "stateCode": "CA", "stateName": "California" },
+            { "stateCode": "NY", "stateName": "New York" }
+          ]
+        },
+        {
+          "id": "ref-001-2",
+          "name": "Canadian Provinces",
+          "description": "List of Canadian provinces and their codes",
+          "columns": ["provinceCode", "provinceName"],
+          "rows": [
+            { "provinceCode": "ON", "provinceName": "Ontario" },
+            { "provinceCode": "QC", "provinceName": "Quebec" }
+          ]
+        }
+      ]
     },
     {
       "id": "ref-002",
@@ -18,7 +39,7 @@
       "lastUpdated": "2024-03-19T15:30:00Z",
       "version": "2.1.0",
       "owner": "Finance Team",
-      "swaggerPage": "https://api.example.com/docs/currency-codes"
+      "childTables": []
     },
     {
       "id": "ref-003",
@@ -28,7 +49,7 @@
       "lastUpdated": "2024-03-18T09:15:00Z",
       "version": "1.5.0",
       "owner": "Business Intelligence Team",
-      "swaggerPage": "https://api.example.com/docs/industry-classifications"
+      "childTables": []
     },
     {
       "id": "ref-004",
@@ -38,7 +59,7 @@
       "lastUpdated": "2024-03-17T11:00:00Z",
       "version": "1.0.2",
       "owner": "Localization Team",
-      "swaggerPage": "https://api.example.com/docs/language-codes"
+      "childTables": []
     },
     {
       "id": "ref-005",
@@ -48,7 +69,7 @@
       "lastUpdated": "2024-03-16T08:20:00Z",
       "version": "3.0.1",
       "owner": "Infrastructure Team",
-      "swaggerPage": "https://api.example.com/docs/time-zones"
+      "childTables": []
     },
     {
       "id": "ref-006",
@@ -58,7 +79,7 @@
       "lastUpdated": "2024-03-15T13:00:00Z",
       "version": "2.0.0",
       "owner": "Standards Team",
-      "swaggerPage": "https://api.example.com/docs/measurement-units"
+      "childTables": []
     },
     {
       "id": "ref-007",
@@ -68,7 +89,7 @@
       "lastUpdated": "2024-03-14T09:00:00Z",
       "version": "1.1.0",
       "owner": "Logistics Team",
-      "swaggerPage": "https://api.example.com/docs/vehicle-types"
+      "childTables": []
     },
     {
       "id": "ref-008",
@@ -78,7 +99,7 @@
       "lastUpdated": "2024-03-13T17:45:00Z",
       "version": "1.3.3",
       "owner": "UX Team",
-      "swaggerPage": "https://api.example.com/docs/color-codes"
+      "childTables": []
     },
     {
       "id": "ref-009",
@@ -88,7 +109,7 @@
       "lastUpdated": "2024-03-12T10:30:00Z",
       "version": "2.2.1",
       "owner": "Catalog Team",
-      "swaggerPage": "https://api.example.com/docs/product-categories"
+      "childTables": []
     },
     {
       "id": "ref-010",
@@ -98,7 +119,7 @@
       "lastUpdated": "2024-03-11T14:10:00Z",
       "version": "1.4.0",
       "owner": "Hardware Team",
-      "swaggerPage": "https://api.example.com/docs/device-types"
+      "childTables": []
     },
     {
       "id": "ref-011",
@@ -108,7 +129,7 @@
       "lastUpdated": "2024-03-10T13:45:00Z",
       "version": "3.1.2",
       "owner": "Health Informatics Team",
-      "swaggerPage": "https://api.example.com/docs/medical-codes"
+      "childTables": []
     },
     {
       "id": "ref-012",
@@ -118,7 +139,7 @@
       "lastUpdated": "2024-03-09T11:15:00Z",
       "version": "2.0.0",
       "owner": "Travel Data Team",
-      "swaggerPage": "https://api.example.com/docs/airport-codes"
+      "childTables": []
     },
     {
       "id": "ref-013",
@@ -128,7 +149,7 @@
       "lastUpdated": "2024-03-08T09:00:00Z",
       "version": "1.0.1",
       "owner": "Payments Team",
-      "swaggerPage": "https://api.example.com/docs/payment-methods"
+      "childTables": []
     },
     {
       "id": "ref-014",
@@ -138,7 +159,7 @@
       "lastUpdated": "2024-03-07T15:25:00Z",
       "version": "1.2.5",
       "owner": "HR Data Team",
-      "swaggerPage": "https://api.example.com/docs/job-titles"
+      "childTables": []
     },
     {
       "id": "ref-015",
@@ -148,7 +169,7 @@
       "lastUpdated": "2024-03-06T16:10:00Z",
       "version": "1.1.3",
       "owner": "Academic Records Team",
-      "swaggerPage": "https://api.example.com/docs/education-levels"
+      "childTables": []
     },
     {
       "id": "ref-016",
@@ -158,7 +179,7 @@
       "lastUpdated": "2024-03-05T12:00:00Z",
       "version": "1.3.0",
       "owner": "Facilities Team",
-      "swaggerPage": "https://api.example.com/docs/building-types"
+      "childTables": []
     },
     {
       "id": "ref-017",
@@ -168,7 +189,7 @@
       "lastUpdated": "2024-03-04T14:45:00Z",
       "version": "2.0.0",
       "owner": "Web Dev Team",
-      "swaggerPage": "https://api.example.com/docs/browser-versions"
+      "childTables": []
     },
     {
       "id": "ref-018",
@@ -178,7 +199,7 @@
       "lastUpdated": "2024-03-03T08:30:00Z",
       "version": "1.0.0",
       "owner": "Climate Team",
-      "swaggerPage": "https://api.example.com/docs/weather-conditions"
+      "childTables": []
     },
     {
       "id": "ref-019",
@@ -188,7 +209,7 @@
       "lastUpdated": "2024-03-02T10:30:00Z",
       "version": "1.5.0",
       "owner": "Legal Compliance Team",
-      "swaggerPage": "https://api.example.com/docs/legal-entity-types"
+      "childTables": []
     },
     {
       "id": "ref-020",
@@ -198,7 +219,7 @@
       "lastUpdated": "2024-03-01T09:20:00Z",
       "version": "2.0.4",
       "owner": "Product Ops Team",
-      "swaggerPage": "https://api.example.com/docs/product-lifecycle"
+      "childTables": []
     }
   ]
 }
