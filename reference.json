@@ -9,11 +9,18 @@
       "version": "1.0.0",
       "status": "active",
       "sensitivityLevel": "public",
-      "sourceDatasets": {
-        "id1":"isos1",
-        "id2":"isos222"
-      },
-      "sourceSystem": ["ISO","CCPFD"],
+      "sourceDatasets": [
+        {
+          "source_system": "company_a",
+          "datasetId": "id1",
+          "datasetName": "isos1",
+        },
+        {
+          "source_system": "company_b",
+          "datasetId": "id2",
+          "datasetName": "isos222"
+        }
+      ]
       "owner": "Data Governance Team",
       "lineage": {
         "upstream": [],
