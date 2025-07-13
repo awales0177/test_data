@@ -20,7 +20,7 @@
           "datasetId": "id2",
           "datasetName": "isos222"
         }
-      ]
+      ],
       "owner": "Data Governance Team",
       "lineage": {
         "upstream": [],
