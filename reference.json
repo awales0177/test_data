@@ -13,7 +13,7 @@
         {
           "source_system": "company_a",
           "datasetId": "id1",
-          "datasetName": "isos1",
+          "datasetName": "isos1"
         },
         {
           "source_system": "company_b",
